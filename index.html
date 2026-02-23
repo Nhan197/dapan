@@ -47,7 +47,15 @@
             margin-bottom: 30px; border-left: 6px solid #ff69b4;
         }
 
-        .q-text { font-size: 17px; font-weight: 700; color: #2f3542; margin-bottom: 15px; }
+        .q-text { font-size: 17px; font-weight: 700; color: #2f3542; margin-bottom: 15px; text-align: justify; }
+        
+        .q-options {
+            background: #fdfdfd; padding: 15px 20px; border-radius: 10px;
+            border-left: 4px solid #ffb8b8; margin-bottom: 20px; color: #57606f;
+            font-size: 16px;
+        }
+        .q-options div { margin-bottom: 8px; }
+        .q-options div:last-child { margin-bottom: 0; }
         
         .correct-ans-box {
             display: inline-block; background: #eafaf1; color: #27ae60;
@@ -69,7 +77,7 @@
         /* Bảng Đúng sai giải thích */
         .tf-exp-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
         .tf-exp-table th { background: #ffe4e1; color: #d63384; padding: 10px; border: 1px solid #f1f2f6;}
-        .tf-exp-table td { padding: 12px; border: 1px solid #f1f2f6; vertical-align: top;}
+        .tf-exp-table td { padding: 12px; border: 1px solid #f1f2f6; vertical-align: top; text-align: justify;}
         .tf-exp-table .state { font-weight: 900; text-align: center; width: 80px;}
         .state-true { color: #27ae60; background: #eafaf1;}
         .state-false { color: #e74c3c; background: #fff0f0;}
@@ -87,7 +95,13 @@
     <div class="section-title">Phần 1. Trắc nghiệm phân tích 🐾</div>
 
     <div class="q-card">
-        <div class="q-text">Câu 1: Nguyên nhân cốt lõi nhất về mặt phương pháp giúp Mendel phát hiện ra các quy luật di truyền chính xác?</div>
+        <div class="q-text">Câu 1: Nguyên nhân cốt lõi nhất về mặt phương pháp giúp Mendel phát hiện ra các quy luật di truyền chính xác trong khi các nhà khoa học cùng thời thất bại là gì?</div>
+        <div class="q-options">
+            <div>A. Chọn đậu Hà Lan có khả năng tự thụ phấn nghiêm ngặt.</div>
+            <div><strong style="color: #27ae60;">B. Phân tích sự di truyền của từng cặp tính trạng riêng rẽ trước khi xét nhiều tính trạng.</strong></div>
+            <div>C. Sử dụng toán thống kê xác suất để phân tích kết quả lai.</div>
+            <div>D. Đậu Hà Lan có thời gian sinh trưởng ngắn, dễ trồng.</div>
+        </div>
         <div class="correct-ans-box">Đáp án chuẩn: B</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
@@ -96,8 +110,14 @@
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 2: Ruồi giấm đực (2n=8). Số nhóm gen liên kết tối đa có thể phát hiện được ở ruồi đực là bao nhiêu?</div>
-        <div class="correct-ans-box">Đáp án chuẩn: B (5 nhóm)</div>
+        <div class="q-text">Câu 2: Ruồi giấm đực có bộ nhiễm sắc thể 2n = 8. Số nhóm gen liên kết tối đa có thể phát hiện được ở cơ thể ruồi giấm đực là bao nhiêu?</div>
+        <div class="q-options">
+            <div>A. 4 nhóm.</div>
+            <div><strong style="color: #27ae60;">B. 5 nhóm.</strong></div>
+            <div>C. 8 nhóm.</div>
+            <div>D. 3 nhóm.</div>
+        </div>
+        <div class="correct-ans-box">Đáp án chuẩn: B</div>
         <div class="explanation">
             <h4>💡 Giải mã bẫy:</h4>
             <p>Học sinh thường học vẹt công thức: <span class="highlight">Số nhóm gen liên kết = n</span> (Suy ra n=4). Tuy nhiên, ruồi giấm đực có bộ NST giới tính là XY (chứa các gen không tương đồng). Do đó, bộ NST của nó gồm: 3 cặp NST thường (tương đương 3 nhóm) + 1 NST X (1 nhóm) + 1 NST Y (1 nhóm) = <strong>5 nhóm gen liên kết</strong>.</p>
@@ -105,8 +125,14 @@
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 3: Lai cây làm mẹ có lá đốm cẩm thạch với cây làm bố lá xanh. Đời con F1 có thể xuất hiện kiểu hình nào?</div>
-        <div class="correct-ans-box">Đáp án chuẩn: D (Có thể xuất hiện cả lá xanh, lá đốm, lá trắng)</div>
+        <div class="q-text">Câu 3: Tiến hành phép lai giữa thực vật (D): cây làm mẹ có lá đốm cẩm thạch (do đột biến gen trong lục lạp phân li không đồng đều) giao phấn với cây làm bố có lá xanh bình thường. Quá trình sinh sản diễn ra bình thường. Đời con F1 có thể xuất hiện các kiểu hình với đặc điểm nào sau đây?</div>
+        <div class="q-options">
+            <div>A. 100% cây con đều có lá đốm giống hệt mẹ.</div>
+            <div>B. 100% cây con có lá xanh do gen bố lấn át.</div>
+            <div>C. Phân li kiểu hình theo tỉ lệ 3 lá xanh : 1 lá đốm.</div>
+            <div><strong style="color: #27ae60;">D. Có thể xuất hiện đồng thời cả cây lá xanh, cây lá đốm và cây lá trắng.</strong></div>
+        </div>
+        <div class="correct-ans-box">Đáp án chuẩn: D</div>
         <div class="explanation">
             <h4>💡 Giải mã bẫy:</h4>
             <p>Đây là thí nghiệm kinh điển của Correns. Cây mẹ lá đốm mang trong tế bào chất cả lục lạp bình thường (xanh) và lục lạp đột biến (trắng). Trong quá trình phân chia tế bào chất không đồng đều tạo noãn, có 3 loại noãn được tạo ra:
@@ -120,235 +146,352 @@
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 4: Phép lai AaBb \(\times\) aabb cho tỉ lệ 1 dẹt : 1 tròn : 2 dài phản ánh quy luật nào?</div>
-        <div class="correct-ans-box">Đáp án chuẩn: B (Tương tác át chế 9:3:4 hoặc 12:3:1)</div>
+        <div class="q-text">Câu 4: Ở một loài thực vật, xét phép lai D: AaBb \(\times\) aabb. Đời con thu được phân li theo tỉ lệ 1 cây quả dẹt : 1 cây quả tròn : 2 cây quả dài. Kết quả này phản ánh quy luật di truyền nào sau đây?</div>
+        <div class="q-options">
+            <div>A. Tương tác bổ sung kiểu 9:7.</div>
+            <div><strong style="color: #27ae60;">B. Tương tác át chế kiểu 9:3:4 hoặc 12:3:1.</strong></div>
+            <div>C. Tương tác cộng gộp kiểu 15:1.</div>
+            <div>D. Hoán vị gen với tần số 50%.</div>
+        </div>
+        <div class="correct-ans-box">Đáp án chuẩn: B</div>
         <div class="explanation">
             <h4>💡 Giải mã bẫy:</h4>
-            <p>Lai phân tích dị hợp 2 cặp gen luôn cho 4 loại tổ hợp với tỉ lệ 1:1:1:1. Tỉ lệ 1:1:2 chứng tỏ đã có sự gộp lại của 2 nhóm tổ hợp gen cùng quy định một kiểu hình. <br>
+            <p>Lai phân tích cá thể dị hợp 2 cặp gen PLĐL luôn cho 4 loại tổ hợp với tỉ lệ 1:1:1:1. Tỉ lệ 1:1:2 chứng tỏ đã có sự gộp lại của 2 nhóm tổ hợp gen cùng quy định một kiểu hình. <br>
             - Nếu là 9:7 \(\rightarrow\) Lai phân tích cho 1:3.<br>
             - Nếu là 15:1 \(\rightarrow\) Lai phân tích cho 3:1.<br>
-            - Nếu là 9:3:4 (Át chế) \(\rightarrow\) AaBb (1) : Aabb (1) : aaBb (1) : aabb (1). Nhóm aaBb và aabb cùng bị át chế thành màu trắng (dài) \(\rightarrow\) tạo ra tỉ lệ <strong>1:1:2</strong>.</p>
+            - Nếu là 9:3:4 (Át chế) \(\rightarrow\) Lai phân tích: 1 AaBb : 1 Aabb : 1 aaBb : 1 aabb. Nhóm aaBb và aabb cùng bị át chế thành màu trắng (hoặc dài) \(\rightarrow\) tạo ra tỉ lệ <strong>1:1:2</strong>.</p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 5: Gà Creeper (Gen gây chết AA). Lai gà chân ngắn (Aa) với gà chân bình thường (aa).</div>
-        <div class="correct-ans-box">Đáp án chuẩn: C (1 ngắn : 1 bình thường)</div>
+        <div class="q-text">Câu 5: Ở gà, gen A quy định chân ngắn (Creeper) là trội hoàn toàn so với gen a quy định chân bình thường. Tuy nhiên, kiểu gen đồng hợp AA gây chết phôi sớm trước khi nở. Cho gà chân ngắn giao phối với gà chân bình thường (D), tỉ lệ kiểu hình ở thế hệ con là:</div>
+        <div class="q-options">
+            <div>A. 2 gà chân ngắn : 1 gà chân bình thường.</div>
+            <div>B. 100% gà chân ngắn.</div>
+            <div><strong style="color: #27ae60;">C. 1 gà chân ngắn : 1 gà chân bình thường.</strong></div>
+            <div>D. 3 gà chân ngắn : 1 gà chân bình thường.</div>
+        </div>
+        <div class="correct-ans-box">Đáp án chuẩn: C</div>
         <div class="explanation">
             <h4>💡 Giải mã bẫy:</h4>
-            <p>Bẫy lừa tâm lý! Khi nghe "gen gây chết", học sinh lập tức khoanh tỉ lệ 2:1. Tuy nhiên, 2:1 chỉ xuất hiện khi lai hai cá thể mang gen gây chết với nhau (Aa \(\times\) Aa). Ở đây đề cho lai <strong>Aa \(\times\) aa</strong>, sinh ra 1Aa : 1aa. Không hề xuất hiện phôi AA nào để bị chết cả, do đó tỉ lệ vẫn là 1:1 hoàn toàn bình thường.</p>
+            <p>Bẫy lừa tâm lý! Khi nghe "gen gây chết", học sinh lập tức khoanh tỉ lệ 2:1. Tuy nhiên, 2:1 chỉ xuất hiện khi lai hai cá thể dị hợp mang gen gây chết với nhau (Aa \(\times\) Aa). Ở đây đề cho lai <strong>Aa (chân ngắn) \(\times\) aa (bình thường)</strong>, sinh ra 1Aa : 1aa. Không hề xuất hiện phôi AA nào để bị chết cả, do đó tỉ lệ vẫn là 1:1 hoàn toàn bình thường.</p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 6: Khoảng cách A-B=30cM, B-C=10cM. Tần số hoán vị gen giữa A và C quan sát được qua lai phân tích?</div>
-        <div class="correct-ans-box">Đáp án chuẩn: B (Luôn nhỏ hơn 40%)</div>
-        <div class="explanation">
-            <h4>💡 Giải mã:</h4>
-            <p>Khoảng cách lý thuyết A-C là 40cM. Tuy nhiên, trên thực tế, khi khoảng cách gen lớn, hiện tượng <strong>trao đổi chéo kép</strong> (hoán vị 2 lần) sẽ xảy ra, làm hoán vị chéo đoạn NST trở về vị trí ban đầu (che lấp kiểu hình hoán vị). Do đó, tần số hoán vị (tỉ lệ kiểu hình lặn lai phân tích quan sát được) luôn nhỏ hơn khoảng cách bản đồ thực tế cộng lại.</p>
+        <div class="q-text">Câu 6: Trên 1 NST, khoảng cách giữa gen A và B là 30 cM, khoảng cách giữa B và C là 10 cM. Theo lí thuyết, tần số hoán vị gen quan sát được qua phép lai phân tích giữa alen A và C có đặc điểm gì?</div>
+        <div class="q-options">
+            <div>A. Chắc chắn bằng 40%.</div>
+            <div><strong style="color: #27ae60;">B. Luôn nhỏ hơn 40% do có hiện tượng trao đổi chéo kép che lấp bớt hoán vị.</strong></div>
+            <div>C. Bằng chính xác 50% vì các gen nằm quá xa nhau.</div>
+            <div>D. Không thể xác định được vì vượt quá giới hạn 25% của hoán vị gen.</div>
         </div>
-    </div>
-
-    <div class="q-card">
-        <div class="q-text">Câu 7: Phát biểu nào về lai phân tích là KHÔNG chính xác?</div>
         <div class="correct-ans-box">Đáp án chuẩn: B</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
-            <p>Câu B sai vì lai phân tích là công cụ xương sống để xác định <strong>hoán vị gen và liên kết gen</strong> (do cá thể mang gen lặn chỉ cho 1 loại giao tử, giúp bộc lộ toàn bộ giao tử của cơ thể cần xét), chứ không phải chỉ dành riêng cho phân li độc lập.</p>
+            <p>Khoảng cách lý thuyết A-C là 40cM (30+10). Tuy nhiên, trên thực tế, khi khoảng cách gen lớn, hiện tượng <strong>trao đổi chéo kép</strong> (hoán vị xảy ra 2 lần ở 2 điểm giữa A và C) sẽ làm đoạn NST hoán vị chéo rồi lại chéo trở về vị trí ban đầu (che lấp kiểu hình hoán vị). Do đó, tần số hoán vị quan sát được qua lai phân tích luôn nhỏ hơn khoảng cách bản đồ thực tế cộng lại.</p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 8: Alen HbS gây bệnh hồng cầu hình liềm nhưng kháng sốt rét.</div>
-        <div class="correct-ans-box">Đáp án chuẩn: A (Gen đa hiệu)</div>
+        <div class="q-text">Câu 7: Phát biểu nào sau đây về phép lai phân tích là KHÔNG chính xác?</div>
+        <div class="q-options">
+            <div>A. Luôn là phép lai giữa cá thể mang kiểu hình trội với cá thể mang kiểu hình lặn.</div>
+            <div><strong style="color: #27ae60;">B. Chỉ được ứng dụng đối với các gen tuân theo quy luật phân li độc lập của Mendel.</strong></div>
+            <div>C. Tỉ lệ kiểu hình đời con phản ánh chính xác tỉ lệ các loại giao tử của cá thể mang tính trạng trội.</div>
+            <div>D. Có thể dùng để xác định tần số hoán vị gen giữa các locus trên cùng 1 NST.</div>
+        </div>
+        <div class="correct-ans-box">Đáp án chuẩn: B</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
-            <p>Chỉ một gen HbS đột biến (1 locus) nhưng lại tác động tạo ra nhiều đặc điểm kiểu hình khác nhau (hồng cầu biến dạng, tổn thương cơ quan, kháng kí sinh trùng sốt rét). Đây là ví dụ điển hình của <strong>Gen đa hiệu</strong>.</p>
+            <p>Câu B sai vì lai phân tích là công cụ xương sống để xác định cả <strong>hoán vị gen và liên kết gen</strong> (do cá thể mang gen lặn chỉ cho 1 loại giao tử lặn, giúp bộc lộ toàn bộ giao tử của cơ thể cần xét), chứ không phải chỉ dành riêng cho phân li độc lập.</p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 9: Cơ thể \(\frac{Ab}{aB}\) giảm phân, có hoán vị 20%. Mối quan hệ giữa số tế bào hoán vị và tần số?</div>
+        <div class="q-text">Câu 8: Ở người, alen HbS gây bệnh hồng cầu hình liềm (làm biến dạng hồng cầu, tắc nghẽn mạch máu) nhưng ở trạng thái dị hợp lại làm tăng khả năng kháng bệnh sốt rét cho cơ thể. Đây là ví dụ kinh điển của hiện tượng di truyền nào?</div>
+        <div class="q-options">
+            <div><strong style="color: #27ae60;">A. Gen đa hiệu.</strong></div>
+            <div>B. Tương tác gen kiểu cộng gộp.</div>
+            <div>C. Tương tác bổ sung.</div>
+            <div>D. Liên kết gen hoàn toàn.</div>
+        </div>
         <div class="correct-ans-box">Đáp án chuẩn: A</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
-            <p>Công thức vàng: <strong>Tần số hoán vị gen (f) = 1/2 \(\times\) Tỉ lệ tế bào xảy ra hoán vị</strong>.<br>
-            Bởi vì 1 tế bào sinh dục xảy ra hoán vị gen sẽ tạo ra 4 giao tử, trong đó chỉ có 2 giao tử hoán vị và 2 giao tử liên kết. Do đó, nếu f = 20%, suy ra tỉ lệ tế bào đã xảy ra hoán vị phải là \(20\% \times 2 = 40\%\).</p>
+            <p>Chỉ một gen HbS đột biến (1 locus) nhưng lại tác động tạo ra rất nhiều đặc điểm kiểu hình khác nhau trên cơ thể (hồng cầu biến dạng, tổn thương cơ quan, kháng kí sinh trùng sốt rét). Đây là định nghĩa của <strong>Gen đa hiệu</strong>.</p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 10: Cơ thể AaBb tự thụ phấn. Tỉ lệ đời con chứa ĐÚNG 2 alen trội?</div>
-        <div class="correct-ans-box">Đáp án chuẩn: B (3/8)</div>
+        <div class="q-text">Câu 9: Một cơ thể đực có kiểu gen \(\frac{Ab}{aB}\) tiến hành giảm phân sinh tinh. Biết không có đột biến xảy ra. Khẳng định nào sau đây ĐÚNG?</div>
+        <div class="q-options">
+            <div><strong style="color: #27ae60;">A. Nếu có hoán vị gen với tần số 20% thì tỉ lệ số tế bào sinh tinh xảy ra hoán vị là 40%.</strong></div>
+            <div>B. Nếu xảy ra hoán vị gen ở 40% số tế bào sinh tinh thì tần số hoán vị gen thu được là 10%.</div>
+            <div>C. Giao tử mang gen hoán vị luôn chiếm tỉ lệ lớn hơn 25% trong tổng số giao tử.</div>
+            <div>D. Tỉ lệ giao tử Ab luôn bằng tỉ lệ giao tử ab bất kể có xảy ra hoán vị hay không.</div>
+        </div>
+        <div class="correct-ans-box">Đáp án chuẩn: A</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
-            <p>Lai AaBb \(\times\) AaBb (tổng cộng 4 alen). Để nhặt ra 2 alen trội từ 4 vị trí, ta dùng tổ hợp chập:
-            \[ P = \frac{C_4^2}{2^4} = \frac{6}{16} = \frac{3}{8} \]
-            (Hoặc liệt kê thủ công: AAbb (1/16) + aaBB (1/16) + AaBb (4/16) = 6/16).</p>
+            <p>Công thức vàng trong sinh tinh: <strong>Tần số hoán vị gen (f) = 1/2 \(\times\) Tỉ lệ tế bào xảy ra hoán vị</strong>.<br>
+            Bởi vì 1 tế bào sinh tinh xảy ra hoán vị gen sẽ tạo ra 4 giao tử, trong đó chỉ có 2 giao tử hoán vị và 2 giao tử liên kết. Do đó, nếu f = 20%, suy ra tỉ lệ tế bào đã xảy ra hoán vị phải là \(20\% \times 2 = 40\%\).</p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 11: Lấy hạt phấn của hoa đỏ (AaBb) thụ phấn cho hoa trắng (AAbb) trong Tương tác bổ sung 9:7.</div>
-        <div class="correct-ans-box">Đáp án chuẩn: A (1 đỏ : 1 trắng)</div>
+        <div class="q-text">Câu 10: Ở một loài thực vật, cho cơ thể dị hợp tử 2 cặp gen phân li độc lập (AaBb) tiến hành tự thụ phấn. Tính theo lí thuyết, tỉ lệ cá thể ở đời con mang ĐÚNG 2 alen trội trong kiểu gen là bao nhiêu?</div>
+        <div class="q-options">
+            <div>A. 1/4</div>
+            <div><strong style="color: #27ae60;">B. 3/8</strong></div>
+            <div>C. 1/2</div>
+            <div>D. 5/16</div>
+        </div>
+        <div class="correct-ans-box">Đáp án chuẩn: B</div>
+        <div class="explanation">
+            <h4>💡 Giải mã:</h4>
+            <p>Phép lai AaBb \(\times\) AaBb (tổng cộng có 4 alen tham gia). Để chọn ra đúng 2 alen trội từ 4 vị trí, ta dùng tổ hợp chập:
+            \[ P = \frac{C_4^2}{2^4} = \frac{6}{16} = \frac{3}{8} \]
+            (Hoặc liệt kê thủ công các KG có 2 alen trội: AAbb (1/16) + aaBB (1/16) + AaBb (4/16) = 6/16).</p>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-text">Câu 11: Tính trạng màu hoa do 2 cặp gen A,a và B,b phân li độc lập cùng quy định. Kiểu gen có chứa cả alen trội A và B quy định hoa đỏ; các kiểu gen còn lại đều quy định hoa trắng. Lấy hạt phấn của cây hoa đỏ F1 (dị hợp tử 2 cặp gen) thụ phấn cho cây hoa trắng có kiểu gen đồng hợp tử về alen trội A. Tỉ lệ kiểu hình thu được ở đời con là:</div>
+        <div class="q-options">
+            <div><strong style="color: #27ae60;">A. 1 hoa đỏ : 1 hoa trắng.</strong></div>
+            <div>B. 3 hoa đỏ : 1 hoa trắng.</div>
+            <div>C. 1 hoa đỏ : 3 hoa trắng.</div>
+            <div>D. 9 hoa đỏ : 7 hoa trắng.</div>
+        </div>
+        <div class="correct-ans-box">Đáp án chuẩn: A</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
             <p>
-                - Hạt phấn AaBb cho 4 loại: 1AB : 1Ab : 1aB : 1ab.<br>
-                - Noãn AAbb chỉ cho 1 loại: 100% Ab.<br>
-                Kết hợp lại ta được: 1 AABb (Đỏ) : 1 AAbb (Trắng) : 1 AaBb (Đỏ) : 1 Aabb (Trắng).<br>
-                Tổng kết: 2 Đỏ : 2 Trắng = <strong>1 : 1</strong>.
+                - Hạt phấn của cây hoa đỏ F1 (AaBb) cho 4 loại giao tử: 1AB : 1Ab : 1aB : 1ab.<br>
+                - Cây hoa trắng đồng hợp tử về A: Bắt buộc là <strong>AAbb</strong> (vì A-B- là màu đỏ). Cây này chỉ tạo 1 loại noãn duy nhất là: 100% Ab.<br>
+                - Đời con: 1 AABb (Đỏ) : 1 AAbb (Trắng) : 1 AaBb (Đỏ) : 1 Aabb (Trắng).<br>
+                - Tổng kết: 2 Đỏ : 2 Trắng = <strong>1 : 1</strong>.
             </p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 12: Điểm khác biệt cơ bản về NST giới tính giữa lớp Chim và lớp Thú?</div>
+        <div class="q-text">Câu 12: Trong cơ chế di truyền xác định giới tính, điểm khác biệt cơ bản nhất giữa lớp Chim (hoặc bướm, tằm) và lớp Thú (hoặc ruồi giấm) là gì?</div>
+        <div class="q-options">
+            <div><strong style="color: #27ae60;">A. Ở Chim, con trống mang cặp NST giới tính tương đồng (ZZ), con mái mang cặp dị đồng (ZW).</strong></div>
+            <div>B. Ở Chim, giới tính được quyết định hoàn toàn bởi nhiệt độ môi trường ấp trứng.</div>
+            <div>C. Ở Chim, con mái chỉ có một NST giới tính duy nhất (Z0).</div>
+            <div>D. Ở Chim không bao giờ có hiện tượng di truyền liên kết với giới tính.</div>
+        </div>
         <div class="correct-ans-box">Đáp án chuẩn: A</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
-            <p>Ở thú (và ruồi giấm): Đực là XY (dị giao tử), Cái là XX (đồng giao tử).<br>
-            Ở chim (và bướm, tằm, bò sát): Cơ chế đảo ngược hoàn toàn. <strong>Đực là ZZ, Cái là ZW</strong>.</p>
+            <p>Đây là kiến thức nền tảng hay bị nhầm lẫn. Ở thú và ruồi giấm: Đực là XY (dị giao tử), Cái là XX (đồng giao tử).<br>
+            Ở chim, bướm, tằm, bò sát: Cơ chế đảo ngược hoàn toàn. <strong>Đực (trống) là ZZ, Cái (mái) là ZW</strong>.</p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 13: Định nghĩa Mức phản ứng?</div>
+        <div class="q-text">Câu 13: Định nghĩa nào sau đây phản ánh chính xác nhất khái niệm "Mức phản ứng" trong di truyền học?</div>
+        <div class="q-options">
+            <div>A. Sự biến đổi kiểu gen liên tục để thích nghi với các tác nhân khắc nghiệt của môi trường.</div>
+            <div><strong style="color: #27ae60;">B. Tập hợp các giới hạn thường biến (kiểu hình) của một kiểu gen trước các môi trường khác nhau.</strong></div>
+            <div>C. Khả năng phát sinh đột biến của một gen dưới tác động của tia tử ngoại.</div>
+            <div>D. Khả năng di truyền các tập tính mắc phải trong quá trình sống cho thế hệ sau.</div>
+        </div>
         <div class="correct-ans-box">Đáp án chuẩn: B</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
-            <p>Mức phản ứng là giới hạn mà một kiểu gen có thể biến đổi kiểu hình (thường biến) để đáp ứng với các môi trường khác nhau. Kiểu gen quy định mức phản ứng, môi trường quyết định một kiểu hình cụ thể trong mức phản ứng đó.</p>
+            <p>Mức phản ứng là giới hạn mà một kiểu gen có thể biến đổi kiểu hình (thường biến) để đáp ứng với các môi trường sống khác nhau. Kiểu gen quy định mức phản ứng (di truyền được), còn môi trường quyết định một kiểu hình cụ thể trong mức phản ứng đó (không di truyền được).</p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 14: \(\frac{Ab}{aB} \times \frac{ab}{ab}\) (f=20%). Tỉ lệ Trội 1 tính trạng và Lặn 1 tính trạng?</div>
-        <div class="correct-ans-box">Đáp án chuẩn: D (80%)</div>
+        <div class="q-text">Câu 14: Tiến hành phép lai D: \(\frac{Ab}{aB} \times \frac{ab}{ab}\) với tần số hoán vị gen f = 20%. Theo lí thuyết, ở thế hệ con, tổng tỉ lệ các cá thể mang kiểu hình trội về 1 tính trạng và lặn về 1 tính trạng là bao nhiêu?</div>
+        <div class="q-options">
+            <div>A. 20%</div>
+            <div>B. 40%</div>
+            <div>C. 50%</div>
+            <div><strong style="color: #27ae60;">D. 80%</strong></div>
+        </div>
+        <div class="correct-ans-box">Đáp án chuẩn: D</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
-            <p>Kiểu hình 1 trội 1 lặn bao gồm: \(\frac{Ab}{ab}\) và \(\frac{aB}{ab}\). <br>
-            Vì phép lai với \(\frac{ab}{ab}\) luôn nhận được 100% giao tử \(\underline{ab}\), tỉ lệ kiểu hình đời con chính bằng tỉ lệ giao tử của cá thể \(\frac{Ab}{aB}\).<br>
-            Ở cá thể này, \(\underline{Ab}\) và \(\underline{aB}\) là giao tử liên kết. Do f=20%, giao tử liên kết = \((100\% - 20\%) / 2 = 40\%\).<br>
+            <p>Kiểu hình "1 trội 1 lặn" bao gồm: \(\frac{Ab}{ab}\) (trội A, lặn b) và \(\frac{aB}{ab}\) (lặn a, trội B). <br>
+            Vì phép lai với cơ thể \(\frac{ab}{ab}\) luôn nhận được 100% giao tử \(\underline{ab}\), tỉ lệ kiểu hình đời con chính bằng tỉ lệ giao tử tương ứng của cơ thể \(\frac{Ab}{aB}\).<br>
+            Ở cá thể này, \(\underline{Ab}\) và \(\underline{aB}\) là giao tử liên kết. Với f=20%, giao tử liên kết = \((100\% - 20\%) / 2 = 40\%\).<br>
             Vậy tổng 2 kiểu hình = \(40\% + 40\% = 80\%\).</p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 15: Lấy ngẫu nhiên cá thể trội 2 tính trạng (A-B-) từ phép lai AaBb x AaBb. Xác suất thuần chủng ĐÚNG 1 gen?</div>
-        <div class="correct-ans-box">Đáp án chuẩn: C (4/9)</div>
+        <div class="q-text">Câu 15: Xét phép lai AaBb \(\times\) AaBb (các gen phân li độc lập). Lấy ngẫu nhiên 1 cá thể mang kiểu hình trội về cả 2 tính trạng (A-B-) ở đời F1. Xác suất để cá thể đó mang kiểu gen thuần chủng (đồng hợp tử) về ĐÚNG 1 trong 2 gen là bao nhiêu?</div>
+        <div class="q-options">
+            <div>A. 2/9</div>
+            <div>B. 1/9</div>
+            <div><strong style="color: #27ae60;">C. 4/9</strong></div>
+            <div>D. 16/81</div>
+        </div>
+        <div class="correct-ans-box">Đáp án chuẩn: C</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
-            <p>Nhóm kiểu hình A-B- chiếm tỉ lệ 9/16, bao gồm: 1 AABB, 2 AABb, 2 AaBB, 4 AaBb.<br>
-            Yêu cầu là "thuần chủng ĐÚNG 1 gen" (tức là dị hợp gen còn lại), bao gồm các kiểu gen: <strong>AABb (2) và AaBB (2)</strong>.<br>
-            Xác suất = \((2 + 2) / 9 = 4/9\).</p>
+            <p>Nhóm kiểu hình A-B- trong tổng số 16 tổ hợp chiếm tỉ lệ 9/16, bao gồm cụ thể: 1 AABB, 2 AABb, 2 AaBB, 4 AaBb.<br>
+            Yêu cầu là "thuần chủng ĐÚNG 1 gen" (tức là gen còn lại phải dị hợp). Các kiểu gen thỏa mãn là: <strong>AABb (2) và AaBB (2)</strong>.<br>
+            Xác suất bốc trúng chúng trong nhóm A-B- là = \((2 + 2) / 9 = 4/9\).</p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 16: Tương tác cộng gộp 3 cặp gen. Số loại kiểu hình tối đa ở F2 (lai F1 x F1)?</div>
-        <div class="correct-ans-box">Đáp án chuẩn: C (7 loại)</div>
+        <div class="q-text">Câu 16: Chiều cao thân ngô do 3 cặp gen (Aa, Bb, Dd) tương tác theo kiểu cộng gộp quy định. Cứ có 1 alen trội làm cây cao thêm 10cm. Cây thấp nhất (aabbdd) cao 100cm. Nếu cho F1 dị hợp tử 3 cặp gen tự thụ phấn, đời F2 sẽ xuất hiện tối đa bao nhiêu loại kiểu hình về chiều cao?</div>
+        <div class="q-options">
+            <div>A. 3 loại</div>
+            <div>B. 6 loại</div>
+            <div><strong style="color: #27ae60;">C. 7 loại</strong></div>
+            <div>D. 8 loại</div>
+        </div>
+        <div class="correct-ans-box">Đáp án chuẩn: C</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
-            <p>F1 mang 3 cặp gen dị hợp (AaBbDd). Số alen trội trong kiểu gen của thế hệ con F2 có thể dao động từ 0 alen trội (aabbdd) cho đến tối đa 6 alen trội (AABBDD).<br>
-            Các mức alen trội: {0, 1, 2, 3, 4, 5, 6} \(\rightarrow\) Tương ứng với <strong>7 loại kiểu hình chiều cao khác nhau</strong>.</p>
+            <p>F1 mang 3 cặp gen dị hợp (AaBbDd). Số alen trội trong kiểu gen của thế hệ con F2 có thể dao động từ 0 alen trội (đối với cây aabbdd) cho đến tối đa 6 alen trội (đối với cây AABBDD).<br>
+            Các mức đếm alen trội có thể có: {0, 1, 2, 3, 4, 5, 6} \(\rightarrow\) Tương ứng tạo ra <strong>7 loại kiểu hình chiều cao khác nhau</strong> (từ 100cm đến 160cm).</p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 17: Một gen lặn đồng hợp ức chế gen khác không alen với nó?</div>
-        <div class="correct-ans-box">Đáp án chuẩn: A (Tương tác át chế lặn)</div>
+        <div class="q-text">Câu 17: Hiện tượng một gen lặn (ở trạng thái đồng hợp) lấn át sự biểu hiện của các alen thuộc locus gen khác không alen với nó được gọi là quy luật gì?</div>
+        <div class="q-options">
+            <div><strong style="color: #27ae60;">A. Tương tác át chế lặn (tỉ lệ 9:3:4).</strong></div>
+            <div>B. Tương tác bổ sung (tỉ lệ 9:7).</div>
+            <div>C. Tương tác át chế trội (tỉ lệ 12:3:1).</div>
+            <div>D. Tương tác cộng gộp (tỉ lệ 15:1).</div>
+        </div>
+        <div class="correct-ans-box">Đáp án chuẩn: A</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
-            <p>Đây là khái niệm sách giáo khoa của <strong>Át chế lặn (Epistasis)</strong>. Ví dụ: Kiểu gen aa sẽ ức chế hoàn toàn B và b, khiến A-B- và A-bb biểu hiện bình thường, nhưng aaB- và aabb bị át chế thành một kiểu hình thứ ba (tỉ lệ 9:3:4).</p>
+            <p>Đây là khái niệm kinh điển của <strong>Át chế lặn (Recessive Epistasis)</strong>. Ví dụ: Kiểu gen aa sẽ ức chế hoàn toàn gen B và b, khiến A-B- và A-bb biểu hiện bình thường theo locus B, nhưng aaB- và aabb đều bị át chế thành một kiểu hình thứ ba (tạo ra tỉ lệ 9:3:4).</p>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 18: Tại sao ruồi giấm đực KHÔNG có hoán vị gen?</div>
+        <div class="q-text">Câu 18: Tại sao ở ruồi giấm đực KHÔNG bao giờ xảy ra hiện tượng hoán vị gen trong quá trình giảm phân tạo tinh trùng?</div>
+        <div class="q-options">
+            <div>A. Do NST Y không có vùng tương đồng với NST X.</div>
+            <div><strong style="color: #27ae60;">B. Do cơ chế sinh học đặc thù làm không hình thành phức hệ tiếp hợp (synaptonemal complex) ở kì đầu giảm phân I.</strong></div>
+            <div>C. Do tuổi thọ của ruồi đực quá ngắn, không đủ thời gian để các NST trao đổi chéo.</div>
+            <div>D. Do tế bào sinh tinh của ruồi giấm trải qua nguyên phân thay vì giảm phân.</div>
+        </div>
         <div class="correct-ans-box">Đáp án chuẩn: B</div>
         <div class="explanation">
             <h4>💡 Giải mã:</h4>
-            <p>Khác với các loài khác, ruồi giấm đực trong quá trình giảm phân sinh tinh <strong>không hình thành phức hệ tiếp hợp (Synaptonemal complex)</strong> giữa các NST tương đồng ở kì đầu I. Do không có sự bắt chéo vật lý, hiện tượng trao đổi chéo (hoán vị gen) không thể diễn ra.</p>
+            <p>Khác với các loài sinh vật khác, ruồi giấm đực có một cơ chế tiến hóa cực kỳ đặc biệt: Trong quá trình giảm phân I (kì đầu I), tế bào <strong>không hình thành phức hệ tiếp hợp (Synaptonemal complex)</strong> giữa các nhiễm sắc thể tương đồng. Do không có sự kết nối và bắt chéo vật lý, hiện tượng trao đổi chéo (hoán vị gen) không thể diễn ra.</p>
         </div>
     </div>
 
     <div class="section-title" style="margin-top: 50px;">Phần 2. Phân tích tình huống (Đúng/Sai) 🌷</div>
 
     <div class="q-card">
-        <div class="q-text">Câu 1: Gen gây chết AA kết hợp PLĐL (AaBb x AaBb)</div>
+        <div class="q-text">Câu 1: Ở một loài động vật, màu lông do 2 cặp gen A,a và B,b PLĐL cùng quy định. Có cả A và B thì lông xám, còn lại cho lông trắng. Kiểu gen đồng hợp trội (AA) gây chết ngay ở giai đoạn phôi sớm. Cho cá thể lông xám dị hợp tử 2 cặp gen (D) giao phối với nhau.</div>
+        <div class="q-options">
+            <div>a) Trong số các cá thể sống sót lúc mới sinh ở F1, cá thể lông xám chiếm tỉ lệ 50%.</div>
+            <div>b) Trong số các cá thể lông trắng sống sót ở F1, cá thể thuần chủng chiếm tỉ lệ 1/3.</div>
+            <div>c) Có tối đa 4 loại kiểu gen khác nhau cùng quy định kiểu hình lông trắng ở các cá thể trưởng thành.</div>
+            <div>d) Lấy ngẫu nhiên 2 cá thể lông xám ở F1, xác suất thu được ít nhất 1 cá thể mang kiểu gen dị hợp 2 cặp gen là 8/9.</div>
+        </div>
+        
         <div class="explanation">
             <h4>💡 Hướng dẫn giải tổng quát:</h4>
-            <p>Phép lai AaBb x AaBb sinh ra 16 tổ hợp: 9 A-B- : 3 A-bb : 3 aaB- : 1 aabb.<br>
+            <p>Phép lai (D): AaBb \(\times\) AaBb sinh ra 16 tổ hợp: 9 A-B- : 3 A-bb : 3 aaB- : 1 aabb.<br>
             Do <strong>AA gây chết phôi</strong>, ta loại bỏ toàn bộ kiểu gen chứa AA:
-            - A-B- chết: 1 AABB, 2 AABb (Còn sống: 2 AaBB, 4 AaBb = 6 Xám)<br>
-            - A-bb chết: 1 AAbb (Còn sống: 2 Aabb = 2 Trắng)<br>
-            - Nhóm aa sống 100%: 1 aaBB, 2 aaBb, 1 aabb (4 Trắng).<br>
-            Tổng số sống sót: 6 Xám + 6 Trắng = 12 cá thể.</p>
+            - Nhóm A-B- (Xám) bị chết: 1 AABB, 2 AABb (Còn sống: 2 AaBB, 4 AaBb = <strong>6 Xám sống</strong>)<br>
+            - Nhóm A-bb (Trắng) bị chết: 1 AAbb (Còn sống: <strong>2 Aabb trắng</strong>)<br>
+            - Nhóm aa không bị ảnh hưởng (Sống 100%): 1 aaBB, 2 aaBb, 1 aabb (<strong>4 Trắng sống</strong>).<br>
+            Tổng số cá thể sống sót thu được = 6 Xám + 6 Trắng = <strong>12 cá thể</strong>.</p>
             
             <table class="tf-exp-table">
-                <tr><th>Ý</th><th class="state">Đ/S</th><th>Giải thích</th></tr>
-                <tr><td>a) F1 sống sót có 50% xám.</td><td class="state state-true">Đúng</td><td>6 Xám / 12 Tổng số = 50%.</td></tr>
-                <tr><td>b) Nhóm trắng sống sót có 1/3 thuần chủng.</td><td class="state state-true">Đúng</td><td>Lông trắng sống có 6 con. Thuần chủng gồm 1 aaBB và 1 aabb (Tổng = 2). Tỉ lệ = 2/6 = 1/3.</td></tr>
-                <tr><td>c) Có tối đa 4 kiểu gen lông trắng sống.</td><td class="state state-true">Đúng</td><td>Các KG: Aabb, aaBB, aaBb, aabb (Đúng 4 loại, vì AAbb đã chết).</td></tr>
-                <tr><td>d) Lấy 2 xám F1, xác suất có ít nhất 1 AaBb là 8/9.</td><td class="state state-true">Đúng</td><td>Nhóm xám gồm 2 AaBB và 4 AaBb \(\rightarrow\) Tỉ lệ AaBb = 4/6 = 2/3. Xác suất lấy 2 con KHÔNG có AaBb là \((1/3)^2 = 1/9\). Xác suất ít nhất 1 con = \(1 - 1/9 = 8/9\).</td></tr>
+                <tr><th>Ý</th><th class="state">Đ/S</th><th>Giải thích chi tiết</th></tr>
+                <tr><td>a) Cá thể lông xám sống chiếm tỉ lệ 50%.</td><td class="state state-true">Đúng</td><td>6 cá thể Xám / 12 Tổng số cá thể sống sót = 50%.</td></tr>
+                <tr><td>b) Trong số lông trắng sống, thuần chủng chiếm 1/3.</td><td class="state state-true">Đúng</td><td>Lông trắng sống có tổng 6 con (2+4). Số con thuần chủng gồm 1 aaBB và 1 aabb (Tổng = 2). Tỉ lệ = 2/6 = 1/3.</td></tr>
+                <tr><td>c) Có 4 loại kiểu gen lông trắng sống trưởng thành.</td><td class="state state-true">Đúng</td><td>Các KG quy định màu trắng sống sót là: Aabb, aaBB, aaBb, aabb (Đúng 4 loại, vì KG AAbb đã chết).</td></tr>
+                <tr><td>d) Lấy 2 xám F1, xác suất có ít nhất 1 AaBb là 8/9.</td><td class="state state-true">Đúng</td><td>Nhóm Xám sống gồm 2 AaBB và 4 AaBb \(\rightarrow\) Tỉ lệ AaBb trong nhóm Xám là 4/6 = 2/3. Tỉ lệ không phải AaBb là 1/3. Xác suất lấy 2 con KHÔNG có AaBb là \((1/3)^2 = 1/9\). Xác suất có ÍT NHẤT 1 con AaBb = \(1 - 1/9 = 8/9\).</td></tr>
             </table>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 2: Tương tác 9:7 kết hợp phôi chết (aabb) và Hoán vị gen (Ab/aB x Ab/aB, f=20%)</div>
+        <div class="q-text">Câu 2: Ở một loài thực vật, màu sắc hoa do A,a và B,b cùng nằm trên 1 NST quy định (Tương tác 9:7, A-B-: Đỏ, còn lại Trắng). Đột biến làm phôi hạt mang kiểu gen đồng hợp lặn (aabb) bị chết. Cho cây đỏ dị hợp chéo \(\frac{Ab}{aB}\) tự thụ phấn, f = 20%.</div>
+        <div class="q-options">
+            <div>a) Các giao tử mang ít nhất 1 alen trội được tạo ra từ cây (D) chiếm tỉ lệ 80%.</div>
+            <div>b) Tỉ lệ cây hoa Đỏ trong số các cây sống sót trưởng thành ở đời con xấp xỉ 51,51%.</div>
+            <div>c) Trong quần thể cây sống sót, có 3 loại kiểu gen khác nhau cùng quy định kiểu hình hoa Trắng.</div>
+            <div>d) Tỉ lệ giao tử hoán vị \(\underline{ab}\) của cây (D) là 10%.</div>
+        </div>
+        
         <div class="explanation">
             <h4>💡 Hướng dẫn giải tổng quát:</h4>
-            <p>Cây \(\frac{Ab}{aB}\) với f=20% cho giao tử: \(\underline{Ab} = 0.4; \underline{aB} = 0.4; \underline{AB} = 0.1; \underline{ab} = 0.1\).<br>
-            Phôi aabb bị chết \(\rightarrow\) Tỉ lệ chết = \(0.1 \times 0.1 = 0.01\). Tổng cây sống sót = \(1 - 0.01 = 0.99\).<br>
-            Tính các nhóm kiểu hình: <br>
-            - Đỏ (A-B-) = \(0.5 + aabb_{trước\_chết} = 0.5 + 0.01 = 0.51\).<br>
-            - Hoa trắng (A-bb, aaB-, aabb). Trong đó aabb = 0.
+            <p>Cây dị hợp chéo \(\frac{Ab}{aB}\) với f=20% cho 4 loại giao tử: \(\underline{Ab} = 0.4; \underline{aB} = 0.4; \underline{AB} = 0.1; \underline{ab} = 0.1\).<br>
+            Phôi aabb bị chết \(\rightarrow\) Tỉ lệ chết = \(\underline{ab} \times \underline{ab} = 0.1 \times 0.1 = 0.01\). Tổng tỉ lệ cây nảy mầm sống sót = \(1 - 0.01 = 0.99\).<br>
+            Tính các nhóm kiểu hình ban đầu (trước khi chết): <br>
+            - Đỏ (A-B-) = \(0.5 + aabb = 0.5 + 0.01 = 0.51\).<br>
+            - Trắng (A-bb + aaB- + aabb) = \(1 - 0.51 = 0.49\). Vì aabb=0.01 bị chết, hoa trắng sống sót = 0.48.
             </p>
             
             <table class="tf-exp-table">
-                <tr><th>Ý</th><th class="state">Đ/S</th><th>Giải thích</th></tr>
-                <tr><td>a) Giao tử mang ít nhất 1 alen trội = 80%.</td><td class="state state-false">Sai</td><td>Giao tử có alen trội = 100% - giao tử lặn (ab). = 100% - 10% = <strong>90%</strong>.</td></tr>
-                <tr><td>b) Tỉ lệ Đỏ sống sót xấp xỉ 51,51%.</td><td class="state state-true">Đúng</td><td>Đỏ / Sống sót = 0.51 / 0.99 \(\approx\) 0.5151 (51,51%).</td></tr>
-                <tr><td>c) Có 3 loại KG quy định hoa Trắng sống sót.</td><td class="state state-false">Sai</td><td>Kiểu gen hoa trắng gồm A-bb (2 loại), aaB- (2 loại) và aabb. Vì aabb chết, số KG sống là 2+2 = <strong>4 loại</strong>.</td></tr>
-                <tr><td>d) Tỉ lệ giao tử hoán vị \(\underline{ab}\) = 10%.</td><td class="state state-true">Đúng</td><td>Do cây dị hợp chéo \(\frac{Ab}{aB}\), giao tử mang alen lặn \(\underline{ab}\) là giao tử hoán vị = f/2 = 20%/2 = 10%.</td></tr>
+                <tr><th>Ý</th><th class="state">Đ/S</th><th>Giải thích chi tiết</th></tr>
+                <tr><td>a) Giao tử mang ít nhất 1 alen trội = 80%.</td><td class="state state-false">Sai</td><td>Giao tử có ít nhất 1 alen trội = 100% - giao tử mang toàn alen lặn (\(\underline{ab}\)). = 100% - 10% = <strong>90%</strong>.</td></tr>
+                <tr><td>b) Tỉ lệ Đỏ sống sót xấp xỉ 51,51%.</td><td class="state state-true">Đúng</td><td>Tỉ lệ sống sót = Đỏ / Tổng Sống sót = 0.51 / 0.99 \(\approx\) 0.5151 (51,51%).</td></tr>
+                <tr><td>c) Có 3 loại KG hoa Trắng sống sót.</td><td class="state state-false">Sai</td><td>Kiểu gen hoa trắng ban đầu gồm A-bb (2 loại), aaB- (2 loại) và aabb (1 loại). Vì aabb chết, số KG trắng sống sót còn lại là 2+2 = <strong>4 loại</strong>.</td></tr>
+                <tr><td>d) Tỉ lệ giao tử hoán vị \(\underline{ab}\) = 10%.</td><td class="state state-true">Đúng</td><td>Do cây xuất phát dị hợp chéo \(\frac{Ab}{aB}\), giao tử mang đồng hợp lặn \(\underline{ab}\) là giao tử hoán vị. Tỉ lệ = f/2 = 20%/2 = 10%.</td></tr>
             </table>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 3: Di truyền liên kết giới tính ở Chim (f=20% ở Đực)</div>
+        <div class="q-text">Câu 3: Ở chim (Mái XY, Trống XX). A (vằn) > a (trơn); B (mỏ dài) > b (mỏ ngắn) PLĐL trên NST thường. D (mắt đỏ) > d (mắt trắng) trên X. Chim mái dị hợp đều, đỏ \(\left( \frac{AB}{ab} X^D Y \right)\) \(\times\) Chim trống dị hợp chéo, đỏ dị hợp \(\left( \frac{Ab}{aB} X^D X^d \right)\). Ở chim, f = 20% chỉ có ở giới đực.</div>
+        <div class="q-options">
+            <div>a) Đời con F1 có tối đa 28 loại kiểu gen khác nhau.</div>
+            <div>b) Trong tổng số chim MÁI ở F1, cá thể mang kiểu hình trội về cả 3 tính trạng chiếm tỉ lệ 27,5%.</div>
+            <div>c) Tỉ lệ cá thể chim TRỐNG lặn về cả 3 tính trạng sinh ra ở đời F1 bằng 0%.</div>
+            <div>d) Nếu chỉ xét nhóm chim TRỐNG mang kiểu hình lông vằn, mỏ ngắn ở F1, xác suất thu được cá thể thuần chủng là 2/9.</div>
+        </div>
+
         <div class="explanation">
             <h4>💡 Hướng dẫn giải tổng quát:</h4>
             <p><strong>Lưu ý chí mạng:</strong> Chim MÁI là XY, Chim TRỐNG là XX. Hoán vị gen ở chim chỉ xảy ra ở giới ĐỰC (Trống).<br>
-            Phép lai: Mái \(\left( \frac{AB}{ab} X^D Y \right)\) \(\times\) Trống \(\left( \frac{Ab}{aB} X^D X^d \right)\).<br>
             - Mái không HVG cho giao tử NST thường: \(\underline{AB} = 0.5; \underline{ab} = 0.5\). Giao tử giới tính: \(X^D = 0.5; Y = 0.5\).<br>
-            - Trống có f=20% cho giao tử: \(\underline{Ab}=0.4; \underline{aB}=0.4; \underline{AB}=0.1; \underline{ab}=0.1\). Giao tử giới tính: \(X^D = 0.5; X^d = 0.5\).
+            - Trống có f=20% cho giao tử NST thường: \(\underline{Ab}=0.4; \underline{aB}=0.4; \underline{AB}=0.1; \underline{ab}=0.1\). Giao tử giới tính: \(X^D = 0.5; X^d = 0.5\).
             </p>
             
             <table class="tf-exp-table">
-                <tr><th>Ý</th><th class="state">Đ/S</th><th>Giải thích</th></tr>
-                <tr><td>a) F1 có tối đa 28 loại kiểu gen.</td><td class="state state-true">Đúng</td><td>Lai NST thường (2 g/tử \(\times\) 4 g/tử) cho 7 kiểu gen. Lai cặp giới tính cho 4 kiểu gen (\(X^D X^D, X^D X^d, X^D Y, X^d Y\)). Tổng = \(7 \times 4 = 28\).</td></tr>
-                <tr><td>b) Tỉ lệ chim Mái trội 3 tính trạng = 27,5%.</td><td class="state state-true">Đúng</td><td>Trong tổng số Mái (chia cho nhóm Mái), chim mắt đỏ (\(X^D Y\)) chiếm tỉ lệ 1/2 = 0.5. Ở NST thường, tính trạng A-B- = \(0.5(\text{Mẹ AB}) \times 1 + 0.5(\text{Mẹ ab}) \times 0.1(\text{Bố AB}) = 0.55\). Xác suất = \(0.5 \times 0.55 = 0.275 = 27.5\%\).</td></tr>
-                <tr><td>c) Chim Trống lặn 3 tính trạng = 0%.</td><td class="state state-true">Đúng</td><td>Chim trống mang kiểu gen XX. Phép lai \(X^D Y \times X^D X^d\) sinh ra chim trống là \(X^D X^D\) và \(X^D X^d\). Không hề có trống mắt trắng lặn (\(X^d X^d\)) \(\rightarrow\) Tỉ lệ = 0.</td></tr>
-                <tr><td>d) Trống vằn ngắn (A-bb), XS thuần chủng 2/9.</td><td class="state state-false">Sai</td><td>Trống vằn ngắn (A-bb) = Mẹ ab(0.5) \(\times\) Bố Ab(0.4) = 0.2 (Chỉ có Aabb). Cá thể thuần chủng AAbb = 0. Xác suất = 0.</td></tr>
+                <tr><th>Ý</th><th class="state">Đ/S</th><th>Giải thích chi tiết</th></tr>
+                <tr><td>a) F1 có tối đa 28 loại kiểu gen.</td><td class="state state-true">Đúng</td><td>Phép lai NST thường (2 g/tử \(\times\) 4 g/tử) cho tối đa 7 kiểu gen. Phép lai cặp giới tính cho 4 kiểu gen (\(X^D X^D, X^D X^d, X^D Y, X^d Y\)). Tổng = \(7 \times 4 = 28\) KG.</td></tr>
+                <tr><td>b) Tỉ lệ Mái trội 3 tính trạng = 27,5%.</td><td class="state state-true">Đúng</td><td>Trong nội bộ nhóm chim Mái (Y), chim mắt đỏ (\(X^D Y\)) chiếm 1/2 = 0.5. Ở cặp NST thường, tính trạng A-B- = \(0.5(\text{Mẹ AB}) \times 100\% + 0.5(\text{Mẹ ab}) \times 0.1(\text{Bố AB}) = 0.55\). Xác suất = \(0.5 \times 0.55 = 0.275 = 27.5\%\).</td></tr>
+                <tr><td>c) Chim Trống lặn 3 tính trạng = 0%.</td><td class="state state-true">Đúng</td><td>Chim trống mang kiểu gen XX. Phép lai \(X^D Y \times X^D X^d\) sinh ra chim trống là \(X^D X^D\) và \(X^D X^d\). Không hề có trống mắt trắng lặn (\(X^d X^d\)) nào được sinh ra \(\rightarrow\) Tỉ lệ = 0.</td></tr>
+                <tr><td>d) Trống vằn ngắn (A-bb), XS thuần chủng 2/9.</td><td class="state state-false">Sai</td><td>Trống vằn ngắn (A-bb) = Giao tử Mẹ \(\underline{ab}(0.5) \times\) Giao tử Bố \(\underline{Ab}(0.4) = 0.2\) (Toàn bộ là dị hợp Aabb). Số cá thể thuần chủng AAbb = 0. Xác suất = 0.</td></tr>
             </table>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 4: Tương tác cộng gộp 4 cặp gen (Cao nhất lai thấp nhất)</div>
+        <div class="q-text">Câu 4: Chiều cao thân ngô do 4 cặp gen PLĐL tương tác cộng gộp. 1 alen trội làm cao thêm 5 cm. Thấp nhất (0 trội) = 100 cm. Cây cao nhất lai cây thấp nhất \(\rightarrow\) F1 tự thụ \(\rightarrow\) F2.</div>
+        <div class="q-options">
+            <div>a) Ở F2, lớp cây có chiều cao 110 cm chiếm tỉ lệ lớn nhất trong quần thể.</div>
+            <div>b) Tỉ lệ cây cao 115 cm ở F2 bằng chính xác tỉ lệ cây cao 125 cm.</div>
+            <div>c) Số loại kiểu gen quy định kiểu hình cây cao 120 cm ở F2 là 19 loại.</div>
+            <div>d) Lấy ngẫu nhiên một cây ở F2, xác suất thu được cây có chiều cao từ 110 cm đến 130 cm là 238/256.</div>
+        </div>
+
         <div class="explanation">
             <h4>💡 Hướng dẫn giải tổng quát:</h4>
             <p>P: AABBCCDD (140cm, 8 trội) \(\times\) aabbccdd (100cm, 0 trội) \(\rightarrow\) F1: AaBbCcDd.<br>
-            Cho F1 tự thụ phấn sinh ra F2. Số lượng alen trội trong 1 kiểu gen tuân theo công thức tổ hợp \(C_8^k\).</p>
+            Cho F1 tự thụ phấn sinh ra F2 (có tổng 8 locus). Số lượng alen trội trong 1 kiểu hình tuân theo công thức tổ hợp \(C_8^k\).</p>
             
             <table class="tf-exp-table">
-                <tr><th>Ý</th><th class="state">Đ/S</th><th>Giải thích</th></tr>
-                <tr><td>a) Cây 110cm chiếm tỉ lệ lớn nhất.</td><td class="state state-false">Sai</td><td>Cây 110cm có 2 alen trội. Lớp cây có số alen trội trung bình = 4 alen (tương ứng 120cm) mới chiếm tỉ lệ lớn nhất (Hình quả chuông).</td></tr>
-                <tr><td>b) Cây 115cm và 125cm bằng nhau.</td><td class="state state-true">Đúng</td><td>Cây 115cm (3 trội) = \(C_8^3\). Cây 125cm (5 trội) = \(C_8^5\). Theo tính chất đối xứng \(C_8^3 = C_8^5 = 56\).</td></tr>
-                <tr><td>c) Có 19 kiểu gen cho cây 120cm.</td><td class="state state-true">Đúng</td><td>Cây 120cm (4 trội). Tổ hợp gen: (2 đ.hợp trội, 2 lặn) = \(C_4^2 = 6\). (1 đ.hợp trội, 2 dị hợp, 1 lặn) = \(C_4^1 \times C_3^2 = 12\). (4 dị hợp) = 1. Tổng = 6 + 12 + 1 = 19 loại KG.</td></tr>
-                <tr><td>d) Xác suất 110cm - 130cm = 238/256.</td><td class="state state-true">Đúng</td><td>Tổng từ 2 đến 6 trội = \(C_8^2 + C_8^3 + C_8^4 + C_8^5 + C_8^6 = 28 + 56 + 70 + 56 + 28 = 238\). Tỉ lệ = 238/256.</td></tr>
+                <tr><th>Ý</th><th class="state">Đ/S</th><th>Giải thích chi tiết</th></tr>
+                <tr><td>a) Cây 110cm chiếm tỉ lệ lớn nhất.</td><td class="state state-false">Sai</td><td>Cây 110cm tương ứng có 2 alen trội. Theo quy luật đường cong hình chuông, lớp cây có số alen trội trung bình = 4 alen (tương ứng 120cm) mới chiếm tỉ lệ lớn nhất.</td></tr>
+                <tr><td>b) Cây 115cm = cây 125cm.</td><td class="state state-true">Đúng</td><td>Cây 115cm có (3 trội) = \(C_8^3\). Cây 125cm có (5 trội) = \(C_8^5\). Theo tính chất đối xứng của tam giác Pascal, \(C_8^3 = C_8^5 = 56\) phần.</td></tr>
+                <tr><td>c) Có 19 loại KG cho cây 120cm.</td><td class="state state-true">Đúng</td><td>Cây 120cm mang 4 trội. Các trường hợp tổ hợp gen: <br>- (2 đ.hợp trội, 2 lặn) = \(C_4^2 = 6\) KG. <br>- (1 đ.hợp trội, 2 dị hợp, 1 lặn) = \(C_4^1 \times C_3^2 = 12\) KG. <br>- (4 dị hợp) = 1 KG. <br>Tổng = 6 + 12 + 1 = 19 loại.</td></tr>
+                <tr><td>d) XS cây từ 110cm đến 130cm là 238/256.</td><td class="state state-true">Đúng</td><td>Khoảng này tương đương từ 2 trội đến 6 trội. Tính bằng: \(C_8^2 + C_8^3 + C_8^4 + C_8^5 + C_8^6 = 28 + 56 + 70 + 56 + 28 = 238\). Tổng không gian mẫu là \(2^8 = 256\). Tỉ lệ = 238/256.</td></tr>
             </table>
         </div>
     </div>
@@ -356,40 +499,43 @@
     <div class="section-title" style="margin-top: 50px;">Phần 3. Định lượng chuyên sâu 💖</div>
 
     <div class="q-card">
-        <div class="q-text">Câu 1: Xét phép lai AaBbDd \(\times\) AaBbDd. Chọn 3 cây mang kiểu hình trội 3 tính trạng, xác suất có ĐÚNG 1 cây dị hợp tử 3 cặp gen?</div>
+        <div class="q-text">Câu 1: Xét phép lai AaBbDd \(\times\) AaBbDd. Từ F1 chọn ra các cây trội 3 tính trạng. Lấy ngẫu nhiên 3 cây trong nhóm này, xác suất để có ĐÚNG 1 cây dị hợp tử 3 cặp gen (AaBbDd) là bao nhiêu? (Làm tròn 4 chữ số thập phân).</div>
         <div class="correct-ans-box">Đáp án: 0.4402</div>
         <div class="explanation">
+            <p><strong>Phân tích giới hạn không gian mẫu:</strong></p>
             <div class="math-box">
-                - Tỉ lệ cây trội 3 tính trạng (A-B-D-) trong quần thể F1 là: \((3/4)^3 = 27/64\).<br>
-                - Tỉ lệ cây dị hợp 3 cặp gen (AaBbDd) trong quần thể F1 là: \((1/2)^3 = 8/64\).<br>
-                - Xác suất chọn ĐƯỢC 1 cây dị hợp 3 cặp TỪ TRONG nhóm trội 3 tính trạng là: \(8/64 \div 27/64 = 8/27\).<br>
-                - Lấy ngẫu nhiên 3 cây, áp dụng công thức Bernoulli để có ĐÚNG 1 cây \(AaBbDd\):<br>
+                - Tỉ lệ nhóm cây Trội 3 tính trạng (A-B-D-) sinh ra ở F1 là: \((3/4)^3 = 27/64\).<br>
+                - Tỉ lệ cây mang kiểu gen dị hợp tử 3 cặp (AaBbDd) trong tổng quần thể là: \((1/2)^3 = 8/64\).<br>
+                - Vì ta CHỈ lấy cây trong nhóm Trội, xác suất bốc ĐƯỢC 1 cây AaBbDd là: \(8/64 \div 27/64 = \mathbf{8/27}\).<br>
+                - Xác suất bốc TRƯỢT (không phải AaBbDd, nhưng vẫn trội 3 tính trạng) là: \(1 - 8/27 = \mathbf{19/27}\).<br>
+                <br>
+                <strong>Áp dụng toán tổ hợp Bernoulli lấy 3 cây (Đúng 1 Trúng, 2 Trượt):</strong><br>
                 \( P = C_3^1 \times \left(\frac{8}{27}\right)^1 \times \left(\frac{19}{27}\right)^2 \approx 0.440176 \)
             </div>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 2: Cây dị hợp tử chéo \(\frac{Ab}{aB}\) tự thụ phấn (f=20% 2 giới). Tỉ lệ cây có ĐÚNG 2 alen trội?</div>
-        <div class="correct-ans-box">Đáp án: 66%</div>
+        <div class="q-text">Câu 2: Một cơ thể thực vật có kiểu gen dị hợp tử chéo \(\frac{Ab}{aB}\) tiến hành tự thụ phấn. (f=20% 2 giới). Tỉ lệ cây có kiểu gen chứa ĐÚNG 2 alen trội là bao nhiêu phần trăm?</div>
+        <div class="correct-ans-box">Đáp án: 66</div>
         <div class="explanation">
-            <p>Giao tử sinh ra: \(\underline{Ab} = 0.4; \underline{aB} = 0.4; \underline{AB} = 0.1; \underline{ab} = 0.1\).</p>
-            <p>Cây có đúng 2 alen trội bao gồm các kiểu gen sau:</p>
+            <p>Giao tử đực và cái sinh ra giống nhau: \(\underline{Ab} = 0.4; \underline{aB} = 0.4; \underline{AB} = 0.1; \underline{ab} = 0.1\).</p>
+            <p>Cây có đúng 2 alen trội được cấu thành từ các trường hợp tổ hợp giao tử sau:</p>
             <ul>
-                <li><strong>\(\frac{Ab}{Ab}\)</strong> = \(0.4 \times 0.4 = 0.16\)</li>
-                <li><strong>\(\frac{aB}{aB}\)</strong> = \(0.4 \times 0.4 = 0.16\)</li>
-                <li><strong>\(\frac{AB}{ab}\)</strong> (Dị hợp đều) = \(2 \times (\underline{AB} \times \underline{ab}) = 2 \times 0.1 \times 0.1 = 0.02\)</li>
-                <li><strong>\(\frac{Ab}{aB}\)</strong> (Dị hợp chéo) = \(2 \times (\underline{Ab} \times \underline{aB}) = 2 \times 0.4 \times 0.4 = 0.32\)</li>
+                <li><strong>\(\frac{Ab}{Ab}\)</strong> = Giao tử Ab \(\times\) Giao tử Ab = \(0.4 \times 0.4 = 0.16\)</li>
+                <li><strong>\(\frac{aB}{aB}\)</strong> = Giao tử aB \(\times\) Giao tử aB = \(0.4 \times 0.4 = 0.16\)</li>
+                <li><strong>\(\frac{AB}{ab}\)</strong> (Dị hợp đều) = 2 \(\times\) (Giao tử AB \(\times\) Giao tử ab) = \(2 \times 0.1 \times 0.1 = 0.02\)</li>
+                <li><strong>\(\frac{Ab}{aB}\)</strong> (Dị hợp chéo) = 2 \(\times\) (Giao tử Ab \(\times\) Giao tử aB) = \(2 \times 0.4 \times 0.4 = 0.32\)</li>
             </ul>
-            <div class="math-box">Tổng cộng = 0.16 + 0.16 + 0.02 + 0.32 = 0.66 (66%).</div>
+            <div class="math-box">Tổng cộng = 0.16 + 0.16 + 0.02 + 0.32 = 0.66 (Đổi ra phần trăm: 66%).</div>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 3: Chiều cao cây do 3 gen cộng gộp. F1 AaBbDd tự thụ. Chọn cây TỪ 115cm TRỞ LÊN, XS cây đó CHÍNH XÁC 115cm?</div>
+        <div class="q-text">Câu 3: Chiều cao cây do 3 gen cộng gộp (A,B,D). Cây aabbdd cao 100cm. 1 alen trội làm cao thêm 5cm. F1 dị hợp 3 cặp gen tự thụ. Cách li tất cả cây cao TỪ 115cm TRỞ LÊN ở F2. Lấy ngẫu nhiên 1 cây trong đó, xác suất để nó cao CHÍNH XÁC 115cm là?</div>
         <div class="correct-ans-box">Đáp án: 0.4762</div>
         <div class="explanation">
-            <p>Chiều cao gốc 100cm. Cây 115cm tương đương chứa 3 alen trội (100 + 3x5). "Từ 115cm trở lên" là từ 3 alen trội đến 6 alen trội. F2 có tổng cộng 6 locus alen. Số tổ hợp tương ứng:</p>
+            <p>Chiều cao gốc 100cm. Cây 115cm tương đương chứa 3 alen trội (\(100 + 3 \times 5\)). "Từ 115cm trở lên" tức là chứa từ 3 alen trội đến tối đa 6 alen trội. Đời F2 có tổng cộng 6 vị trí locus alen. Số tổ hợp tương ứng:</p>
             <ul>
                 <li>Cây 3 alen trội (115cm) = \(C_6^3 = 20\) tổ hợp.</li>
                 <li>Cây 4 alen trội (120cm) = \(C_6^4 = 15\) tổ hợp.</li>
@@ -397,70 +543,72 @@
                 <li>Cây 6 alen trội (130cm) = \(C_6^6 = 1\) tổ hợp.</li>
             </ul>
             <div class="math-box">
-                Tổng số tổ hợp thỏa mãn điều kiện cách li = 20 + 15 + 6 + 1 = 42.<br>
-                Xác suất cây bốc được chính xác 115cm = \(20 / 42 = 10 / 21 \approx 0.47619\) (Tức 0.4762).
+                Tổng số tổ hợp thỏa mãn điều kiện cách li (không gian mẫu thu hẹp) = 20 + 15 + 6 + 1 = 42.<br>
+                Xác suất bốc đúng cây 115cm (có 20 tổ hợp) = \(20 / 42 = 10 / 21 \approx 0.47619\) (Làm tròn 0.4762).
             </div>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 4: Phép lai 1 (Tự thụ) ra 16% lặn. Phép lai 2 (Lai phân tích) ra 10% lặn. Lấy Cây 1 lai Cây 2?</div>
-        <div class="correct-ans-box">Đáp án: 42%</div>
+        <div class="q-text">Câu 4: Cây 1 (dị hợp 2 cặp gen) tự thụ phấn ra 16% aabb. Cây 2 (dị hợp 2 cặp gen) lai phân tích ra 10% aabb. Đem Cây 1 \(\times\) Cây 2, tỉ lệ kiểu hình mang ĐÚNG 1 tính trạng lặn là?</div>
+        <div class="correct-ans-box">Đáp án: 42</div>
         <div class="explanation">
-            <p><strong>Bước 1: Tìm kiểu gen 2 cây:</strong></p>
+            <p><strong>Bước 1: Giải mã kiểu gen và tần số hoán vị của 2 cây:</strong></p>
             <ul>
-                <li>Cây 1 tự thụ \(\rightarrow aabb = 16\% = 0.4 \times 0.4\). Suy ra giao tử lặn \(\underline{ab} = 0.4 > 0.25\). Đây là giao tử liên kết. Vậy Cây 1 là dị hợp đều \(\frac{AB}{ab}\) (f=20%).</li>
-                <li>Cây 2 lai phân tích \(\rightarrow aabb = 10\%\). Suy ra Cây 2 cho giao tử \(\underline{ab} = 10\% < 25\%\). Đây là giao tử hoán vị. Vậy Cây 2 là dị hợp chéo \(\frac{Ab}{aB}\) (f=20%).</li>
+                <li>Cây 1 tự thụ phấn sinh ra \(\frac{ab}{ab} = 16\% = 0.4 \times 0.4\). Suy ra giao tử lặn \(\underline{ab} = 0.4 > 0.25\). Vì \(\underline{ab}\) lớn hơn 25%, nó là giao tử liên kết. Vậy Cây 1 là dị hợp tử đều \(\frac{AB}{ab}\) với f = \(100\% - 40\% \times 2 = 20\%\).</li>
+                <li>Cây 2 lai phân tích (với \(\frac{ab}{ab}\)) ra kiểu hình lặn \(\frac{ab}{ab} = 10\%\). Suy ra Cây 2 cho giao tử \(\underline{ab} = 10\% < 25\%\). Đây là giao tử hoán vị. Vậy Cây 2 là dị hợp tử chéo \(\frac{Ab}{aB}\) với f = \(10\% \times 2 = 20\%\).</li>
             </ul>
-            <p><strong>Bước 2: Cho Cây 1 \(\times\) Cây 2:</strong></p>
+            <p><strong>Bước 2: Tiến hành phép lai Cây 1 \(\times\) Cây 2:</strong></p>
             <ul>
-                <li>Cây 1 cho giao tử: \(\underline{AB}=\underline{ab}=0.4\); \(\underline{Ab}=\underline{aB}=0.1\)</li>
-                <li>Cây 2 cho giao tử: \(\underline{Ab}=\underline{aB}=0.4\); \(\underline{AB}=\underline{ab}=0.1\)</li>
-                <li>Lặn 2 tính trạng (aabb) = \(0.4 (\text{Cây 1}) \times 0.1 (\text{Cây 2}) = 0.04\).</li>
+                <li>Cây 1 (\(\frac{AB}{ab}\)) cho giao tử: \(\underline{AB}=\underline{ab}=0.4\); \(\underline{Ab}=\underline{aB}=0.1\).</li>
+                <li>Cây 2 (\(\frac{Ab}{aB}\)) cho giao tử: \(\underline{Ab}=\underline{aB}=0.4\); \(\underline{AB}=\underline{ab}=0.1\).</li>
+                <li>Hợp tử lặn 2 tính trạng (\(\frac{ab}{ab}\)) sinh ra = \(0.4 (\text{từ Cây 1}) \times 0.1 (\text{từ Cây 2}) = 0.04\).</li>
             </ul>
             <div class="math-box">
-                Kiểu hình mang ĐÚNG 1 tính trạng lặn (A-bb + aaB-):<br>
-                = \((0.25 - aabb) + (0.25 - aabb) = 0.5 - 2 \times aabb = 0.5 - 2(0.04) = 0.42\) (42%).
+                Sử dụng công thức tính nhanh hoán vị gen: Kiểu hình mang 1 trội, 1 lặn (A-bb hoặc aaB-):<br>
+                A-bb = \(0.25 - \frac{ab}{ab}\) = 0.25 - 0.04 = 0.21<br>
+                aaB- = \(0.25 - \frac{ab}{ab}\) = 0.25 - 0.04 = 0.21<br>
+                Tổng kiểu hình mang đúng 1 tính trạng lặn = 0.21 + 0.21 = 0.42 (Tức 42%).
             </div>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 5: \(\frac{Ab}{aB}\) (f=18%) \(\times\) \(\frac{AB}{ab}\) (Đực không HVG). Hóa chất giết chết tinh trùng ab. Tỉ lệ aabb ở F1?</div>
-        <div class="correct-ans-box">Đáp án: 0.00%</div>
+        <div class="q-text">Câu 5: \(\frac{Ab}{aB}\) (giới cái, f=18%) \(\times\) \(\frac{AB}{ab}\) (Đực không HVG). Hóa chất giết chết toàn bộ tinh trùng ab. Tính tỉ lệ sống sót của cá thể aabb ở F1?</div>
+        <div class="correct-ans-box">Đáp án: 0.00</div>
         <div class="explanation">
-            <h4>💡 Bẫy "Không làm cũng ra":</h4>
-            <p>Ruồi đực kiểu gen \(\frac{AB}{ab}\) bình thường sẽ tạo ra 2 loại tinh trùng là \(\underline{AB}\) và \(\underline{ab}\) với tỉ lệ 1:1. Tuy nhiên, hóa chất đã tiêu diệt toàn bộ tinh trùng \(\underline{ab}\).</p>
-            <p>Điều này có nghĩa là con đực CHỈ thụ tinh bằng tinh trùng \(\underline{AB}\) (mang 100% alen trội). Do đó, bất kể con cái cho giao tử gì, thế hệ con F1 luôn luôn nhận được alen trội từ bố, không bao giờ xuất hiện kiểu gen đồng hợp lặn \(\frac{ab}{ab}\).</p>
-            <div class="math-box">Xác suất aabb = 0.00%.</div>
+            <h4>💡 Bẫy "Đọc kĩ đề là ra đáp án":</h4>
+            <p>Ruồi đực kiểu gen \(\frac{AB}{ab}\) bình thường không có hoán vị gen sẽ tạo ra 2 loại tinh trùng là \(\underline{AB}\) và \(\underline{ab}\) với tỉ lệ 50:50. Tuy nhiên, hóa chất đã tiêu diệt chết toàn bộ tinh trùng \(\underline{ab}\).</p>
+            <p>Hệ quả là con đực CHỈ còn lại tinh trùng \(\underline{AB}\) (mang 100% alen trội) tham gia thụ tinh. Do đó, bất kể con cái sinh ra noãn mang giao tử gì (kể cả noãn lặn \(\underline{ab}\)), thế hệ con F1 luôn luôn nhận được 2 alen trội A và B từ bố. Do đó không bao giờ xuất hiện kiểu gen đồng hợp lặn \(\frac{ab}{ab}\) ở đời con.</p>
+            <div class="math-box">Xác suất kiểu hình lặn aabb = 0.00%.</div>
         </div>
     </div>
 
     <div class="q-card">
-        <div class="q-text">Câu 6: Đếm số loại kiểu gen tối đa của thể 1 nhiễm (2n-1) và thể 3 nhiễm (2n+1) trên 3 cặp NST.</div>
+        <div class="q-text">Câu 6: Gen 1 (3 alen), Gen 2 (2 alen), Gen 3 (4 alen) nằm trên 3 cặp NST khác nhau. Tính tổng số loại kiểu gen tối đa của thể 1 nhiễm (2n-1) và thể 3 nhiễm (2n+1) CÓ THỂ xuất hiện trong quần thể.</div>
         <div class="correct-ans-box">Đáp án: 1182</div>
         <div class="explanation">
-            <p>Số alen của 3 gen lần lượt là \(r_1 = 3\), \(r_2 = 2\), \(r_3 = 4\). Đột biến chỉ xảy ra ở 1 cặp NST.</p>
+            <p>Ta kí hiệu số alen của 3 gen lần lượt là \(r_1 = 3\), \(r_2 = 2\), \(r_3 = 4\). Đột biến lệch bội chỉ xảy ra ở 1 trong 3 cặp NST.</p>
             <ul>
-                <li><strong>Nhóm 1: Bình thường (2n):</strong><br>
-                Cặp 1: \(\frac{3 \times 4}{2} = 6\) KG. Cặp 2: \(\frac{2 \times 3}{2} = 3\) KG. Cặp 3: \(\frac{4 \times 5}{2} = 10\) KG.</li>
+                <li><strong>Bước đệm - Quần thể bình thường (2n):</strong> Áp dụng công thức \(r(r+1)/2\).<br>
+                Cặp 1: \((3 \times 4)/2 = 6\) KG. Cặp 2: \((2 \times 3)/2 = 3\) KG. Cặp 3: \((4 \times 5)/2 = 10\) KG.</li>
             </ul>
-            <p><strong>Trường hợp 1: Đột biến ở cặp NST số 1</strong></p>
+            <p><strong>Trường hợp 1: Đột biến xảy ra ở cặp NST số 1</strong> (Cặp 2 và 3 giữ nguyên bình thường)</p>
             <ul>
-                <li>Thể một (Chỉ có 1 alen): 3 loại KG. (Cặp 2, 3 bình thường). \(\rightarrow 3 \times 3 \times 10 = 90\) KG.</li>
-                <li>Thể ba (Có 3 alen, dùng công thức tổ hợp lặp \(C_{r+3-1}^3 = C_{r+2}^3\)): \(C_{3+2}^3 = 10\) KG. \(\rightarrow 10 \times 3 \times 10 = 300\) KG.</li>
+                <li>Thể một (Chỉ có 1 alen tại locus): có 3 loại KG (chính là số alen r). \(\rightarrow 3 \times 3 \times 10 = 90\) KG tổng thể.</li>
+                <li>Thể ba (Có 3 alen, dùng công thức tổ hợp lặp \(C_{r+3-1}^3 = C_{r+2}^3\)): Cặp 1 có \(C_{3+2}^3 = 10\) KG. \(\rightarrow 10 \times 3 \times 10 = 300\) KG.</li>
             </ul>
-            <p><strong>Trường hợp 2: Đột biến ở cặp NST số 2</strong></p>
+            <p><strong>Trường hợp 2: Đột biến xảy ra ở cặp NST số 2</strong> (Cặp 1 và 3 giữ nguyên)</p>
             <ul>
-                <li>Thể một: 2 loại KG. \(\rightarrow 6 \times 2 \times 10 = 120\) KG.</li>
+                <li>Thể một (có 2 alen): 2 loại KG. \(\rightarrow 6 \times 2 \times 10 = 120\) KG.</li>
                 <li>Thể ba: \(C_{2+2}^3 = 4\) KG. \(\rightarrow 6 \times 4 \times 10 = 240\) KG.</li>
             </ul>
-            <p><strong>Trường hợp 3: Đột biến ở cặp NST số 3</strong></p>
+            <p><strong>Trường hợp 3: Đột biến xảy ra ở cặp NST số 3</strong> (Cặp 1 và 2 giữ nguyên)</p>
             <ul>
-                <li>Thể một: 4 loại KG. \(\rightarrow 6 \times 3 \times 4 = 72\) KG.</li>
+                <li>Thể một (có 4 alen): 4 loại KG. \(\rightarrow 6 \times 3 \times 4 = 72\) KG.</li>
                 <li>Thể ba: \(C_{4+2}^3 = 20\) KG. \(\rightarrow 6 \times 3 \times 20 = 360\) KG.</li>
             </ul>
-            <div class="math-box">Tổng tất cả các thể lệch bội = 90 + 300 + 120 + 240 + 72 + 360 = <strong>1182 kiểu gen</strong>.</div>
+            <div class="math-box">Tổng hợp tất cả các đột biến lệch bội có thể = 90 + 300 + 120 + 240 + 72 + 360 = <strong>1182 kiểu gen</strong>.</div>
         </div>
     </div>
 
