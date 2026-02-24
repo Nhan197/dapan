@@ -3,84 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giải Chi Tiết - Đề Kiểm Tra Chương 2 VDC 🌸</title>
+    <title>Giải Chi Tiết - Đề Kiểm Tra Chương 2 VDC 🌈</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700;900&display=swap" rel="stylesheet">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script>MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] } };</script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
+        /* --- CẤU HÌNH MÀU SẮC CHỦ ĐẠO --- */
+        :root {
+            --primary-color: #ff6b81;
+            --secondary-color: #3498db;
+            --success-color: #2ecc71;
+            --warning-color: #f1c40f;
+            --danger-color: #e74c3c;
+            --dark-text: #2c3e50;
+            --light-text: #ecf0f1;
+            --bg-gradient: linear-gradient(135deg, #fff5f7 0%, #eef2ff 50%, #f0fff4 100%);
+        }
+
         body { 
             font-family: 'Quicksand', sans-serif; 
             line-height: 1.7; 
             max-width: 950px; 
             margin: 0 auto; 
             padding: 20px; 
-            background-color: #fff0f5; 
-            color: #2f3542; 
+            background: var(--bg-gradient); /* Nền gradient nhẹ nhàng */
+            color: var(--dark-text); 
         }
         
-        /* WATERMARK */
+        /* WATERMARK MỚI - MÀU TRUNG TÍNH ĐỂ KHÔNG BỊ RỐI */
         .watermark {
             position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1;
-            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='350' height='350'><text x='50%' y='50%' transform='rotate(-45 175 175)' font-size='32' fill='rgba(255, 105, 180, 0.08)' font-family='Quicksand, sans-serif' font-weight='bold' text-anchor='middle' dominant-baseline='middle'>BẠCH HOÀI NHÂN</text></svg>");
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='350' height='350'><text x='50%' y='50%' transform='rotate(-45 175 175)' font-size='32' fill='rgba(100, 100, 100, 0.05)' font-family='Quicksand, sans-serif' font-weight='900' text-anchor='middle' dominant-baseline='middle'>BẠCH HOÀI NHÂN</text></svg>");
         }
 
+        /* HEADER RỰC RỠ HƠN */
         .header { 
-            background: #ffe4e1; padding: 30px 20px; border-radius: 20px; 
-            box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4); text-align: center; 
-            border-bottom: 6px solid #ff6b81; margin-bottom: 30px;
+            background: linear-gradient(to right, #ff758c, #ff7eb3, #a796ff); /* Gradient hoàng hôn */
+            padding: 40px 30px; border-radius: 25px; 
+            box-shadow: 0 15px 30px rgba(255, 118, 136, 0.3); text-align: center; 
+            color: white;
+            margin-bottom: 40px;
+            border: 4px solid rgba(255,255,255,0.3);
         }
-        .header h1 { color: #d63384; font-weight: 900; margin: 0 0 10px 0; font-size: 32px; text-transform: uppercase;}
-        .header p { color: #ff4757; font-weight: 700; font-size: 18px; margin: 0;}
+        .header h1 { font-weight: 900; margin: 0 0 10px 0; font-size: 36px; text-transform: uppercase; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);}
+        .header p { font-weight: 700; font-size: 20px; margin: 0; opacity: 0.95;}
 
+        /* TITLE TỪNG PHẦN - MỖI PHẦN 1 TÔNG MÀU */
         .section-title {
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
-            color: #d63384; padding: 15px 25px; border-radius: 15px;
-            font-weight: 900; font-size: 24px; margin: 40px 0 20px 0;
-            box-shadow: 0 4px 15px rgba(255, 154, 158, 0.4);
-            display: inline-block;
+            padding: 18px 35px; border-radius: 50px;
+            font-weight: 900; font-size: 24px; margin: 50px 0 30px 0;
+            color: white; display: inline-block;
+            position: relative;
+            box-shadow: 0 10px 20px -5px rgba(0,0,0,0.2);
         }
+        /* Màu cho Phần 1: Xanh dương */
+        .section-p1 { background: linear-gradient(45deg, #3498db, #8e44ad); box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4); }
+        /* Màu cho Phần 2: Xanh lá */
+        .section-p2 { background: linear-gradient(45deg, #2ecc71, #16a085); box-shadow: 0 8px 20px rgba(46, 204, 113, 0.4); }
+        /* Màu cho Phần 3: Cam cháy */
+        .section-p3 { background: linear-gradient(45deg, #e67e22, #d35400); box-shadow: 0 8px 20px rgba(230, 126, 34, 0.4); }
 
+        /* THẺ CÂU HỎI (CARD) SỐNG ĐỘNG HƠN */
         .q-card {
-            background: #fff; padding: 25px 30px; border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(255, 192, 203, 0.15);
-            margin-bottom: 30px; border-left: 6px solid #ff69b4;
+            background: #ffffff; padding: 30px; border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin-bottom: 35px; 
+            border-left: 7px solid;
+            transition: all 0.3s ease; /* Hiệu ứng chuyển động */
+            position: relative; overflow: hidden;
         }
+        /* Đường viền màu thay đổi theo phần (dùng CSS selector kề) */
+        .section-p1 ~ .q-card { border-left-color: #3498db; }
+        .section-p2 ~ .q-card { border-left-color: #2ecc71; }
+        .section-p3 ~ .q-card { border-left-color: #e67e22; }
 
-        .q-text { font-size: 17px; font-weight: 700; color: #2f3542; margin-bottom: 15px; text-align: justify; }
+        /* Hiệu ứng hover cho thẻ */
+        .q-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+        .q-card::before { /* Tạo vệt sáng ở góc */
+            content: ''; position: absolute; top: -50%; left: -50%; width: 100%; height: 100%;
+            background: linear-gradient(to bottom right, rgba(255,255,255,0.8), rgba(255,255,255,0));
+            transform: rotate(45deg); transition: all 0.5s; pointer-events: none; opacity: 0;
+        }
+        .q-card:hover::before { opacity: 1; top: -30%; left: -30%; }
+
+
+        .q-text { font-size: 17px; font-weight: 700; color: #2c3e50; margin-bottom: 20px; text-align: justify; }
         
+        /* OPTIONS BOX */
         .q-options {
-            background: #fdfdfd; padding: 15px 20px; border-radius: 10px;
-            border-left: 4px solid #ffb8b8; margin-bottom: 20px; color: #57606f;
-            font-size: 16px;
+            background: #f8f9fa; padding: 20px; border-radius: 15px;
+            border-left: 4px solid #bdc3c7; margin-bottom: 25px; color: #34495e;
+            font-size: 16px; font-weight: 500;
         }
-        .q-options div { margin-bottom: 8px; }
-        .q-options div:last-child { margin-bottom: 0; }
+        /* Màu options box theo phần */
+        .section-p1 ~ .q-card .q-options { background: #f0faff; border-left-color: #aaaaff; }
+        .section-p2 ~ .q-card .q-options { background: #f0fff4; border-left-color: #95e1a9; }
+        .section-p3 ~ .q-card .q-options { background: #fff8f0; border-left-color: #ffccaa; }
+
+        .q-options div { margin-bottom: 10px; }
         
+        /* ĐÁP ÁN ĐÚNG CHUẨN - XANH TƯƠI SÁNG */
         .correct-ans-box {
-            display: inline-block; background: #eafaf1; color: #27ae60;
-            padding: 8px 15px; border-radius: 10px; font-weight: 800;
-            border: 2px dashed #2ed573; margin-bottom: 15px; font-size: 16px;
+            display: inline-block; 
+            background: linear-gradient(to right, #00b09b, #96c93d); /* Gradient xanh */
+            color: #fff;
+            padding: 10px 25px; border-radius: 50px; font-weight: 900;
+            box-shadow: 0 5px 15px rgba(0, 176, 155, 0.3);
+            margin-bottom: 20px; font-size: 16px; text-transform: uppercase;
+            border: none;
         }
 
+        /* GIẢI THÍCH CHI TIẾT */
         .explanation {
-            background: #f8f9fa; border-radius: 15px; padding: 20px;
-            border: 2px solid #e2e8f0; font-size: 16px; color: #57606f;
+            background: #fdfdfd; border-radius: 20px; padding: 25px;
+            border: 3px dashed #dce4ec; font-size: 16px; color: #57606f;
         }
-        .explanation h4 { color: #1e90ff; margin-top: 0; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;}
-        .explanation ul { margin-top: 5px; padding-left: 20px;}
-        .explanation li { margin-bottom: 8px; }
+        /* Màu tiêu đề giải thích theo phần */
+        .section-p1 ~ .q-card .explanation h4 { color: #2980b9; }
+        .section-p2 ~ .q-card .explanation h4 { color: #27ae60; }
+        .section-p3 ~ .q-card .explanation h4 { color: #d35400; }
+
+        .explanation h4 { margin-top: 0; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 800;}
         
-        .highlight { color: #ff4757; font-weight: bold; }
-        .math-box { background: #fff; padding: 10px 15px; border-radius: 8px; border-left: 4px solid #3498db; margin: 10px 0; font-family: monospace; font-size: 15px;}
+        .highlight { color: var(--danger-color); font-weight: bold; background: #fff0f0; padding: 2px 5px; border-radius: 4px;}
         
-        /* Bảng Đúng sai giải thích */
-        .tf-exp-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        .tf-exp-table th { background: #ffe4e1; color: #d63384; padding: 10px; border: 1px solid #f1f2f6;}
-        .tf-exp-table td { padding: 12px; border: 1px solid #f1f2f6; vertical-align: top; text-align: justify;}
-        .tf-exp-table .state { font-weight: 900; text-align: center; width: 80px;}
-        .state-true { color: #27ae60; background: #eafaf1;}
-        .state-false { color: #e74c3c; background: #fff0f0;}
+        /* HỘP CÔNG THỨC TOÁN - NỔI BẬT HƠN */
+        .math-box { 
+            background: #fff; padding: 15px 20px; border-radius: 12px; 
+            border-left: 5px solid; margin: 15px 0; 
+            font-family: 'Quicksand', monospace; font-size: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .section-p1 ~ .q-card .math-box { border-left-color: #3498db; background: #f4faff;}
+        .section-p2 ~ .q-card .math-box { border-left-color: #2ecc71; background: #f4fff8;}
+        .section-p3 ~ .q-card .math-box { border-left-color: #e67e22; background: #fffaf4;}
+        
+        /* BẢNG ĐÚNG SAI - COLORFUL */
+        .tf-exp-table { width: 100%; border-collapse: separate; border-spacing: 0; margin-top: 20px; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 2px solid #ecf0f1;}
+        .tf-exp-table th { 
+            background: linear-gradient(to right, #a8ff78, #78ffd6); /* Gradient xanh ngọc */
+            color: #006442; padding: 15px; font-weight: 900; text-align: center;
+        }
+        .tf-exp-table td { padding: 15px; border-bottom: 1px solid #f1f2f6; vertical-align: top; text-align: justify; background: #fff;}
+        .tf-exp-table .state { font-weight: 900; text-align: center; width: 90px;}
+        
+        /* Trạng thái Đúng/Sai rực rỡ */
+        .state-true { color: #27ae60; background: #eafaf1 !important; border: 2px solid #2ecc71;}
+        .state-false { color: #e74c3c; background: #fff0f0 !important; border: 2px solid #e74c3c;}
+
+        /* Tăng độ đậm cho công thức toán để dễ nhìn trên nền màu */
+        mjx-container { font-weight: 600 !important; color: #2c3e50 !important; }
     </style>
 </head>
 <body>
@@ -88,17 +164,17 @@
     <div class="watermark"></div>
 
     <div class="header">
-        <h1>BÍ KÍP GIẢI ĐỀ CHƯƠNG 2 🚀</h1>
+        <h1>🌈 BÍ KÍP GIẢI ĐỀ CHƯƠNG 2 🚀</h1>
         <p>Phân tích cặn kẽ từng bẫy lý thuyết và bước tính toán ✨</p>
     </div>
 
-    <div class="section-title">Phần 1. Trắc nghiệm phân tích 🐾</div>
+    <div class="section-title section-p1">Phần 1. Trắc nghiệm phân tích 🐾</div>
 
     <div class="q-card">
         <div class="q-text">Câu 1: Nguyên nhân cốt lõi nhất về mặt phương pháp giúp Mendel phát hiện ra các quy luật di truyền chính xác trong khi các nhà khoa học cùng thời thất bại là gì?</div>
         <div class="q-options">
             <div>A. Chọn đậu Hà Lan có khả năng tự thụ phấn nghiêm ngặt.</div>
-            <div><strong style="color: #27ae60;">B. Phân tích sự di truyền của từng cặp tính trạng riêng rẽ trước khi xét nhiều tính trạng.</strong></div>
+            <div><strong style="color: #2ecc71;">B. Phân tích sự di truyền của từng cặp tính trạng riêng rẽ trước khi xét nhiều tính trạng.</strong></div>
             <div>C. Sử dụng toán thống kê xác suất để phân tích kết quả lai.</div>
             <div>D. Đậu Hà Lan có thời gian sinh trưởng ngắn, dễ trồng.</div>
         </div>
@@ -113,7 +189,7 @@
         <div class="q-text">Câu 2: Ruồi giấm đực có bộ nhiễm sắc thể 2n = 8. Số nhóm gen liên kết tối đa có thể phát hiện được ở cơ thể ruồi giấm đực là bao nhiêu?</div>
         <div class="q-options">
             <div>A. 4 nhóm.</div>
-            <div><strong style="color: #27ae60;">B. 5 nhóm.</strong></div>
+            <div><strong style="color: #2ecc71;">B. 5 nhóm.</strong></div>
             <div>C. 8 nhóm.</div>
             <div>D. 3 nhóm.</div>
         </div>
@@ -130,7 +206,7 @@
             <div>A. 100% cây con đều có lá đốm giống hệt mẹ.</div>
             <div>B. 100% cây con có lá xanh do gen bố lấn át.</div>
             <div>C. Phân li kiểu hình theo tỉ lệ 3 lá xanh : 1 lá đốm.</div>
-            <div><strong style="color: #27ae60;">D. Có thể xuất hiện đồng thời cả cây lá xanh, cây lá đốm và cây lá trắng.</strong></div>
+            <div><strong style="color: #2ecc71;">D. Có thể xuất hiện đồng thời cả cây lá xanh, cây lá đốm và cây lá trắng.</strong></div>
         </div>
         <div class="correct-ans-box">Đáp án chuẩn: D</div>
         <div class="explanation">
@@ -149,7 +225,7 @@
         <div class="q-text">Câu 4: Ở một loài thực vật, xét phép lai D: AaBb \(\times\) aabb. Đời con thu được phân li theo tỉ lệ 1 cây quả dẹt : 1 cây quả tròn : 2 cây quả dài. Kết quả này phản ánh quy luật di truyền nào sau đây?</div>
         <div class="q-options">
             <div>A. Tương tác bổ sung kiểu 9:7.</div>
-            <div><strong style="color: #27ae60;">B. Tương tác át chế kiểu 9:3:4 hoặc 12:3:1.</strong></div>
+            <div><strong style="color: #2ecc71;">B. Tương tác át chế kiểu 9:3:4 hoặc 12:3:1.</strong></div>
             <div>C. Tương tác cộng gộp kiểu 15:1.</div>
             <div>D. Hoán vị gen với tần số 50%.</div>
         </div>
@@ -168,7 +244,7 @@
         <div class="q-options">
             <div>A. 2 gà chân ngắn : 1 gà chân bình thường.</div>
             <div>B. 100% gà chân ngắn.</div>
-            <div><strong style="color: #27ae60;">C. 1 gà chân ngắn : 1 gà chân bình thường.</strong></div>
+            <div><strong style="color: #2ecc71;">C. 1 gà chân ngắn : 1 gà chân bình thường.</strong></div>
             <div>D. 3 gà chân ngắn : 1 gà chân bình thường.</div>
         </div>
         <div class="correct-ans-box">Đáp án chuẩn: C</div>
@@ -182,7 +258,7 @@
         <div class="q-text">Câu 6: Trên 1 NST, khoảng cách giữa gen A và B là 30 cM, khoảng cách giữa B và C là 10 cM. Theo lí thuyết, tần số hoán vị gen quan sát được qua phép lai phân tích giữa alen A và C có đặc điểm gì?</div>
         <div class="q-options">
             <div>A. Chắc chắn bằng 40%.</div>
-            <div><strong style="color: #27ae60;">B. Luôn nhỏ hơn 40% do có hiện tượng trao đổi chéo kép che lấp bớt hoán vị.</strong></div>
+            <div><strong style="color: #2ecc71;">B. Luôn nhỏ hơn 40% do có hiện tượng trao đổi chéo kép che lấp bớt hoán vị.</strong></div>
             <div>C. Bằng chính xác 50% vì các gen nằm quá xa nhau.</div>
             <div>D. Không thể xác định được vì vượt quá giới hạn 25% của hoán vị gen.</div>
         </div>
@@ -197,7 +273,7 @@
         <div class="q-text">Câu 7: Phát biểu nào sau đây về phép lai phân tích là KHÔNG chính xác?</div>
         <div class="q-options">
             <div>A. Luôn là phép lai giữa cá thể mang kiểu hình trội với cá thể mang kiểu hình lặn.</div>
-            <div><strong style="color: #27ae60;">B. Chỉ được ứng dụng đối với các gen tuân theo quy luật phân li độc lập của Mendel.</strong></div>
+            <div><strong style="color: #2ecc71;">B. Chỉ được ứng dụng đối với các gen tuân theo quy luật phân li độc lập của Mendel.</strong></div>
             <div>C. Tỉ lệ kiểu hình đời con phản ánh chính xác tỉ lệ các loại giao tử của cá thể mang tính trạng trội.</div>
             <div>D. Có thể dùng để xác định tần số hoán vị gen giữa các locus trên cùng 1 NST.</div>
         </div>
@@ -211,7 +287,7 @@
     <div class="q-card">
         <div class="q-text">Câu 8: Ở người, alen HbS gây bệnh hồng cầu hình liềm (làm biến dạng hồng cầu, tắc nghẽn mạch máu) nhưng ở trạng thái dị hợp lại làm tăng khả năng kháng bệnh sốt rét cho cơ thể. Đây là ví dụ kinh điển của hiện tượng di truyền nào?</div>
         <div class="q-options">
-            <div><strong style="color: #27ae60;">A. Gen đa hiệu.</strong></div>
+            <div><strong style="color: #2ecc71;">A. Gen đa hiệu.</strong></div>
             <div>B. Tương tác gen kiểu cộng gộp.</div>
             <div>C. Tương tác bổ sung.</div>
             <div>D. Liên kết gen hoàn toàn.</div>
@@ -226,7 +302,7 @@
     <div class="q-card">
         <div class="q-text">Câu 9: Một cơ thể đực có kiểu gen \(\frac{Ab}{aB}\) tiến hành giảm phân sinh tinh. Biết không có đột biến xảy ra. Khẳng định nào sau đây ĐÚNG?</div>
         <div class="q-options">
-            <div><strong style="color: #27ae60;">A. Nếu có hoán vị gen với tần số 20% thì tỉ lệ số tế bào sinh tinh xảy ra hoán vị là 40%.</strong></div>
+            <div><strong style="color: #2ecc71;">A. Nếu có hoán vị gen với tần số 20% thì tỉ lệ số tế bào sinh tinh xảy ra hoán vị là 40%.</strong></div>
             <div>B. Nếu xảy ra hoán vị gen ở 40% số tế bào sinh tinh thì tần số hoán vị gen thu được là 10%.</div>
             <div>C. Giao tử mang gen hoán vị luôn chiếm tỉ lệ lớn hơn 25% trong tổng số giao tử.</div>
             <div>D. Tỉ lệ giao tử Ab luôn bằng tỉ lệ giao tử ab bất kể có xảy ra hoán vị hay không.</div>
@@ -243,7 +319,7 @@
         <div class="q-text">Câu 10: Ở một loài thực vật, cho cơ thể dị hợp tử 2 cặp gen phân li độc lập (AaBb) tiến hành tự thụ phấn. Tính theo lí thuyết, tỉ lệ cá thể ở đời con mang ĐÚNG 2 alen trội trong kiểu gen là bao nhiêu?</div>
         <div class="q-options">
             <div>A. 1/4</div>
-            <div><strong style="color: #27ae60;">B. 3/8</strong></div>
+            <div><strong style="color: #2ecc71;">B. 3/8</strong></div>
             <div>C. 1/2</div>
             <div>D. 5/16</div>
         </div>
@@ -259,7 +335,7 @@
     <div class="q-card">
         <div class="q-text">Câu 11: Tính trạng màu hoa do 2 cặp gen A,a và B,b phân li độc lập cùng quy định. Kiểu gen có chứa cả alen trội A và B quy định hoa đỏ; các kiểu gen còn lại đều quy định hoa trắng. Lấy hạt phấn của cây hoa đỏ F1 (dị hợp tử 2 cặp gen) thụ phấn cho cây hoa trắng có kiểu gen đồng hợp tử về alen trội A. Tỉ lệ kiểu hình thu được ở đời con là:</div>
         <div class="q-options">
-            <div><strong style="color: #27ae60;">A. 1 hoa đỏ : 1 hoa trắng.</strong></div>
+            <div><strong style="color: #2ecc71;">A. 1 hoa đỏ : 1 hoa trắng.</strong></div>
             <div>B. 3 hoa đỏ : 1 hoa trắng.</div>
             <div>C. 1 hoa đỏ : 3 hoa trắng.</div>
             <div>D. 9 hoa đỏ : 7 hoa trắng.</div>
@@ -279,7 +355,7 @@
     <div class="q-card">
         <div class="q-text">Câu 12: Trong cơ chế di truyền xác định giới tính, điểm khác biệt cơ bản nhất giữa lớp Chim (hoặc bướm, tằm) và lớp Thú (hoặc ruồi giấm) là gì?</div>
         <div class="q-options">
-            <div><strong style="color: #27ae60;">A. Ở Chim, con trống mang cặp NST giới tính tương đồng (ZZ), con mái mang cặp dị đồng (ZW).</strong></div>
+            <div><strong style="color: #2ecc71;">A. Ở Chim, con trống mang cặp NST giới tính tương đồng (ZZ), con mái mang cặp dị đồng (ZW).</strong></div>
             <div>B. Ở Chim, giới tính được quyết định hoàn toàn bởi nhiệt độ môi trường ấp trứng.</div>
             <div>C. Ở Chim, con mái chỉ có một NST giới tính duy nhất (Z0).</div>
             <div>D. Ở Chim không bao giờ có hiện tượng di truyền liên kết với giới tính.</div>
@@ -296,7 +372,7 @@
         <div class="q-text">Câu 13: Định nghĩa nào sau đây phản ánh chính xác nhất khái niệm "Mức phản ứng" trong di truyền học?</div>
         <div class="q-options">
             <div>A. Sự biến đổi kiểu gen liên tục để thích nghi với các tác nhân khắc nghiệt của môi trường.</div>
-            <div><strong style="color: #27ae60;">B. Tập hợp các giới hạn thường biến (kiểu hình) của một kiểu gen trước các môi trường khác nhau.</strong></div>
+            <div><strong style="color: #2ecc71;">B. Tập hợp các giới hạn thường biến (kiểu hình) của một kiểu gen trước các môi trường khác nhau.</strong></div>
             <div>C. Khả năng phát sinh đột biến của một gen dưới tác động của tia tử ngoại.</div>
             <div>D. Khả năng di truyền các tập tính mắc phải trong quá trình sống cho thế hệ sau.</div>
         </div>
@@ -313,7 +389,7 @@
             <div>A. 20%</div>
             <div>B. 40%</div>
             <div>C. 50%</div>
-            <div><strong style="color: #27ae60;">D. 80%</strong></div>
+            <div><strong style="color: #2ecc71;">D. 80%</strong></div>
         </div>
         <div class="correct-ans-box">Đáp án chuẩn: D</div>
         <div class="explanation">
@@ -330,7 +406,7 @@
         <div class="q-options">
             <div>A. 2/9</div>
             <div>B. 1/9</div>
-            <div><strong style="color: #27ae60;">C. 4/9</strong></div>
+            <div><strong style="color: #2ecc71;">C. 4/9</strong></div>
             <div>D. 16/81</div>
         </div>
         <div class="correct-ans-box">Đáp án chuẩn: C</div>
@@ -347,7 +423,7 @@
         <div class="q-options">
             <div>A. 3 loại</div>
             <div>B. 6 loại</div>
-            <div><strong style="color: #27ae60;">C. 7 loại</strong></div>
+            <div><strong style="color: #2ecc71;">C. 7 loại</strong></div>
             <div>D. 8 loại</div>
         </div>
         <div class="correct-ans-box">Đáp án chuẩn: C</div>
@@ -361,7 +437,7 @@
     <div class="q-card">
         <div class="q-text">Câu 17: Hiện tượng một gen lặn (ở trạng thái đồng hợp) lấn át sự biểu hiện của các alen thuộc locus gen khác không alen với nó được gọi là quy luật gì?</div>
         <div class="q-options">
-            <div><strong style="color: #27ae60;">A. Tương tác át chế lặn (tỉ lệ 9:3:4).</strong></div>
+            <div><strong style="color: #2ecc71;">A. Tương tác át chế lặn (tỉ lệ 9:3:4).</strong></div>
             <div>B. Tương tác bổ sung (tỉ lệ 9:7).</div>
             <div>C. Tương tác át chế trội (tỉ lệ 12:3:1).</div>
             <div>D. Tương tác cộng gộp (tỉ lệ 15:1).</div>
@@ -377,7 +453,7 @@
         <div class="q-text">Câu 18: Tại sao ở ruồi giấm đực KHÔNG bao giờ xảy ra hiện tượng hoán vị gen trong quá trình giảm phân tạo tinh trùng?</div>
         <div class="q-options">
             <div>A. Do NST Y không có vùng tương đồng với NST X.</div>
-            <div><strong style="color: #27ae60;">B. Do cơ chế sinh học đặc thù làm không hình thành phức hệ tiếp hợp (synaptonemal complex) ở kì đầu giảm phân I.</strong></div>
+            <div><strong style="color: #2ecc71;">B. Do cơ chế sinh học đặc thù làm không hình thành phức hệ tiếp hợp (synaptonemal complex) ở kì đầu giảm phân I.</strong></div>
             <div>C. Do tuổi thọ của ruồi đực quá ngắn, không đủ thời gian để các NST trao đổi chéo.</div>
             <div>D. Do tế bào sinh tinh của ruồi giấm trải qua nguyên phân thay vì giảm phân.</div>
         </div>
@@ -388,7 +464,7 @@
         </div>
     </div>
 
-    <div class="section-title" style="margin-top: 50px;">Phần 2. Phân tích tình huống (Đúng/Sai) 🌷</div>
+    <div class="section-title section-p2" style="margin-top: 50px;">Phần 2. Phân tích tình huống (Đúng/Sai) 🌷</div>
 
     <div class="q-card">
         <div class="q-text">Câu 1: Ở động vật (giới đực XY, giới cái XX), hình dáng sừng do A,a (NST thường) và B,b (NST giới tính X) tương tác: A-B- (phân nhánh); A-bb (xoắn); aaB- (thẳng); aabb (không sừng). Phép lai (D): Cái phân nhánh dị hợp \((Aa X^B X^b)\) \(\times\) Đực sừng xoắn dị hợp NST thường \((Aa X^b Y)\).</div>
@@ -493,11 +569,11 @@
         </div>
     </div>
 
-    <div class="section-title" style="margin-top: 50px;">Phần 3. Định lượng chuyên sâu 💖</div>
+    <div class="section-title section-p3" style="margin-top: 50px;">Phần 3. Định lượng chuyên sâu 💖</div>
 
     <div class="q-card">
         <div class="q-text">Câu 1: Xét phép lai AaBbDd \(\times\) AaBbDd (các gen phân li độc lập). Từ thế hệ F1, người ta chỉ chọn ra các cây mang kiểu hình trội về cả 3 tính trạng. Lấy ngẫu nhiên 3 cây trong nhóm này, xác suất để có ĐÚNG 1 cây mang kiểu gen dị hợp tử về cả 3 cặp gen (AaBbDd) là bao nhiêu?</div>
-        <div class="correct-ans-box">Đáp án: 0.4402</div>
+        <div class="correct-ans-box" style="background: linear-gradient(to right, #e67e22, #f39c12); box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3);">Đáp án: 0.4402</div>
         <div class="explanation">
             <p><strong>Phân tích không gian mẫu có điều kiện:</strong></p>
             <div class="math-box">
@@ -514,7 +590,7 @@
 
     <div class="q-card">
         <div class="q-text">Câu 2: Một cơ thể thực vật có kiểu gen dị hợp tử chéo \(\frac{Ab}{aB}\) tiến hành tự thụ phấn. Biết hoán vị gen xảy ra ở cả hai quá trình phát sinh giao tử đực và cái với tần số f = 20%. Tỉ lệ cây có kiểu gen chứa ĐÚNG 2 alen trội là bao nhiêu phần trăm?</div>
-        <div class="correct-ans-box">Đáp án: 66</div>
+        <div class="correct-ans-box" style="background: linear-gradient(to right, #e67e22, #f39c12); box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3);">Đáp án: 66</div>
         <div class="explanation">
             <p>Giao tử đực và cái sinh ra giống hệt nhau: \(\underline{Ab} = 0.4; \underline{aB} = 0.4; \underline{AB} = 0.1; \underline{ab} = 0.1\).</p>
             <p>Cây chứa đúng 2 alen trội được cấu thành từ 4 trường hợp tổ hợp giao tử sau:</p>
@@ -530,7 +606,7 @@
 
     <div class="q-card">
         <div class="q-text">Câu 3: Chiều cao cây do 4 gen cộng gộp (A, B, D, E). Cây lặn (aabbddee) cao 60cm. Mỗi alen trội làm cao thêm 5cm. F1 dị hợp 4 cặp gen tự thụ. Lấy ngẫu nhiên 1 cây cao 75cm ở F2, xác suất nó dị hợp tử ĐÚNG 3 cặp gen là?</div>
-        <div class="correct-ans-box">Đáp án: 0.5714</div>
+        <div class="correct-ans-box" style="background: linear-gradient(to right, #e67e22, #f39c12); box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3);">Đáp án: 0.5714</div>
         <div class="explanation">
             <p>Cây cao 75cm tương đương chứa \((75 - 60)/5 = 3\) alen trội. F1 dị hợp 4 gen (AaBbDdEe) tự thụ phấn có tổng cộng 8 locus alen. Tỉ lệ cây chứa 3 alen trội ở F2 là \(C_8^3 = 56\) phần tổ hợp.</p>
             <p>Để cây này dị hợp tử đúng 3 cặp gen (tức mang 3 alen trội và 3 alen lặn ở 3 locus đó), locus thứ 4 còn lại bắt buộc phải mang 0 alen trội (đồng hợp lặn). Ví dụ kiểu gen: AaBbDdee. Số tổ hợp tương ứng:</p>
@@ -550,7 +626,7 @@
                 - Cây 1 tự thụ phấn \(\rightarrow\) 16% kiểu hình lặn 2 tính trạng (aabb). <br>
                 - Cây 2 lai phân tích \(\rightarrow\) 10% kiểu hình lặn 2 tính trạng. <br>
                 Đem Cây 1 \(\times\) Cây 2, tỉ lệ kiểu hình mang ĐÚNG 1 tính trạng lặn ở đời con thu được là bao nhiêu phần trăm?</div>
-        <div class="correct-ans-box">Đáp án: 42</div>
+        <div class="correct-ans-box" style="background: linear-gradient(to right, #e67e22, #f39c12); box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3);">Đáp án: 42</div>
         <div class="explanation">
             <p><strong>Bước 1: Giải mã kiểu gen và tần số hoán vị của 2 cây:</strong></p>
             <ul>
@@ -574,7 +650,7 @@
 
     <div class="q-card">
         <div class="q-text">Câu 5: Ở loài tứ bội (4n), 2 cặp gen PLĐL. Cho cây tứ bội kiểu gen AAaaBBbb tự thụ phấn. Xác suất F1 mang ĐÚNG 4 alen trội trong kiểu gen?</div>
-        <div class="correct-ans-box">Đáp án: 0.3503</div>
+        <div class="correct-ans-box" style="background: linear-gradient(to right, #e67e22, #f39c12); box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3);">Đáp án: 0.3503</div>
         <div class="explanation">
             <p>Quá trình giảm phân của cây AAaaBBbb sinh ra các giao tử 2n với tỉ lệ độc lập ở mỗi locus: <br>
             - Cặp A: 1/6 AA : 4/6 Aa : 1/6 aa. <br>
@@ -600,7 +676,7 @@
 
     <div class="q-card">
         <div class="q-text">Câu 6: Gen 1 (3 alen), Gen 2 (2 alen), Gen 3 (4 alen) nằm trên 3 cặp NST khác nhau. Tính tổng số lượng CÁC LOẠI KIỂU GEN tối đa của thể 1 nhiễm (2n-1) và thể 3 nhiễm (2n+1) CÓ THỂ xuất hiện trong quần thể.</div>
-        <div class="correct-ans-box">Đáp án: 1182</div>
+        <div class="correct-ans-box" style="background: linear-gradient(to right, #e67e22, #f39c12); box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3);">Đáp án: 1182</div>
         <div class="explanation">
             <p>Số alen của 3 gen: $r_1 = 3$, $r_2 = 2$, $r_3 = 4$. Đột biến lệch bội chỉ xảy ra ở 1 trong 3 cặp NST.</p>
             <ul>
